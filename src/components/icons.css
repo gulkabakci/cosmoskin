@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,800);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+ .boxes{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    margin-left: 50px;
+    
+} 
+
+.ct{
+    margin-top: -16px;
+    max-height: 150px;
+    background-image: url( "../assets/pattern3.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.box {
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.082);
+    border-radius: 100%;
+    display: flex;
+    transform: translate3d(-50%, -50%, 0);
+    
+ 
+
+    }
+    
+    .box:hover {
+    cursor: pointer;
+    }
+    
+    .box:hover .box__caption {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0);
+
+    }
+    
+    .box:hover .box__img {
+    transform: scale(1);
+    filter: blur(2px) brightness(80%);
+    }
+    
+    .box__img {
+    
+    width: 60px;
+    height: 60px;
+    transform: scale(1.1);
+    transition: all 250ms ease-in-out;
+    }
+    
+    .box__caption {
+    color: rgb(255, 255, 255);
+    line-height: 1.25;
+    font-size:26px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    font-family: 'Teko', sans-serif;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -30%, 0);
+    transition: all 250ms ease-in-out;
+    }

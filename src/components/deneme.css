@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,800);
+
+
+.carousel-indicators{
+    visibility: hidden;
+}
+.sldr{
+    max-height:550px;
+    object-fit: cover;
+    margin-top: 60px;
+}
+
+.carouselCap{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 30px;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: rgb(2, 9, 41);
+    line-height:1.5;
+    word-spacing:9px;
+    
+
+}
+
+
