@@ -46,7 +46,7 @@ function NavbarCom() {
                   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
                 <br /><br />
                 <form action="" style={{position:"absolute",top:"380px", }} >
-                    <input className="mt-3" type="search" placeholder="Ara.." required />
+                    <input className="mt-3" type="search" placeholder="Ürün ismi.." required />
                     <i class="fa fa-search"></i>
                 </form> 
             </div>

@@ -80,7 +80,7 @@
     padding-top: 0px;
 }
 
-li{
+.topbar li{
     padding-right: 25px;
     padding-left: 25px;
     list-style: none;
@@ -96,14 +96,14 @@ li{
     border-bottom: 1px solid rgb(17, 67, 111);
 } */
 
-li:after {
+.topbar li:after {
     display:block;
     content: '';
     border-bottom: solid 2px  rgb(17, 67, 111);  
     transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
   }
-li:hover:after { 
+.topbar li:hover:after { 
     transform: scaleX(1.5);
  }
   

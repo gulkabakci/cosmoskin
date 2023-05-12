@@ -11,9 +11,8 @@ const Home = () => {
         <NavbarCom/>
         <Carousel/>
         <Slide/>
-        <Section/>
         <Boxes/>
-
+        <Section/>
         <Footer/>
 
     </div>

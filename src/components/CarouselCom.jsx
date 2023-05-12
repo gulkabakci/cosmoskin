@@ -1,44 +1,26 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react';
-import slider1 from "../assets/slider1.jpg";
-import slider2 from "../assets/slider2.jpg";
-import slider3 from "../assets/slider3.jpg";
-import background from "../assets/background.jpg";
+import gorsel1 from "../assets/ciltbakim.jpg";
+import gorsel2 from "../assets/ciltbakim2.jpg";
+import Container from 'react-bootstrap/Container';
 
 import "./deneme.css"
-import { Container } from 'react-bootstrap';
 
 function CarouselFadeExample() {
     return (
        
-        <Container>
-        <Carousel fade variant="dark" interval={null}        >
-            <Carousel.Item className=''>
-                <img
-                    className="d-block w-100 sldr "
-                    src={slider1}
-                    alt="First slide"
-                />
-                <Carousel.Caption >
-                    <div style={{paddingBottom:"120px", paddingLeft:"20px",width:"50%"}}>
-                    <p className='carouselCap' >İyi bir cilt bakım rutini, sağlıklı ve ışıltılı bir cilt için şarttır. Ancak, hangi kozmetik ürünleri seçeceğimizi ve kullanacağımızı bilmek kolay değildir. Kozmetik endüstrisi oldukça karmaşıktır ve içerik listelerindeki kimyasal isimler genellikle anlaşılması zor olabilir.</p>
-                    </div>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100 sldr"
-                    src={slider2}
-                    alt="Second slide"
-                />
+        <Container className='my-5'>
 
-                <Carousel.Caption>
-                <div style={{paddingBottom:"200px",display:"flex",width:"75%" }}>
-                    <p className='carouselCap'>Bu nedenle, sizin için en uygun kozmetik ürünleri bulmanızda yardımcı olacak bir web sitesi tasarladık. Markaların ürünlerinin içeriklerinin kullanım amacına uygunluğunu ve formülasyonlarının uygunluğunu değerlendirerek, size doğru bilgiyi sunuyoruz. Böylece, cildinizin ihtiyaçlarına uygun olarak seçtiğiniz ürünlerle sağlıklı bir cilt bakım rutini oluşturabilirsiniz.</p>
-                 </div>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+          <div style={{display:"flex",marginTop:"150px",justifyContent:"space-evenly",alignItems:"center"}}>
+            <p className='cap'>İyi bir cilt bakım rutini, sağlıklı ve ışıltılı bir cilt için şarttır. Ancak, hangi kozmetik ürünleri seçeceğimizi ve kullanacağımızı bilmek kolay değildir. Kozmetik endüstrisi oldukça karmaşıktır ve içerik listelerindeki kimyasal isimler genellikle anlaşılması zor olabilir.</p>
+            <img className='photos' src={gorsel1}></img>
+          </div>
+
+          <div style={{display:"flex",marginTop:"120px",justifyContent:"space-evenly",alignItems:"center"}}>
+          <img className='photos' src={gorsel2}></img>
+          <p className='cap'>Bu nedenle, sizin için en uygun kozmetik ürünleri bulmanızda yardımcı olacak bir web sitesi tasarladık. Markaların ürünlerinin içeriklerinin kullanım amacına uygunluğunu ve formülasyonlarının uygunluğunu değerlendirerek, size doğru bilgiyi sunuyoruz. Böylece, cildinizin ihtiyaçlarına uygun olarak seçtiğiniz ürünlerle sağlıklı bir cilt bakım rutini oluşturabilirsiniz.</p>
+
+          </div>
         </Container>
     );
 }
