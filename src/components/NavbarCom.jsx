@@ -7,6 +7,9 @@ import mail from "../assets/mail.png";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Carousel from 'react-bootstrap/Carousel';
+import pattern5 from "../assets/bg1.jpg";
+import pattern4 from "../assets/bg3.jpg";
 
 
 import React from 'react'
@@ -16,16 +19,16 @@ function NavbarCom() {
 
     <div className='nvbr ' >
 
-      <Row className='str '>
+      <Row className='str ' >
 
         <Col className='topbar' >
-          <div className='socialdiv'> <div className='fcc'> <img className='social' src={phone} title="Telefon" /></div> <p className='pq'> &nbsp; 0546254342</p> </div>
-          <div className='socialdiv mx-2'> <div className='fcc'> <img className='social' src={mail} title="Mail" /></div> <p className='pq'>&nbsp; cosmo@outlook.com</p> </div>
+          <div className='socialdiv d-flex'> <div className='fcc'> <img className='social' src={phone} title="Telefon" /></div> <p className='pq'> &nbsp;  &nbsp; 0546254342</p> </div>
+          <div className='socialdiv d-flex mx-2'> <div className='fcc'> <img className='social' src={mail} title="Mail" /></div> <p className='pq'>&nbsp;  &nbsp; cosmo@outlook.com</p> </div>
         </Col>
 
         <Col className='fc' xs={4}>
           <div ><img id='logo' src={logo} alt="" /></div>
-          <div className='pq' style={{textAlign:"center"}}>COSMOWEB</div>
+          <div className='pq' style={{ textAlign: "center" }}>COSMOWEB</div>
         </Col>
 
         <Col className='topbar'>
@@ -38,27 +41,42 @@ function NavbarCom() {
 
       </Row>
 
-            <div className='firstdiv' style={{position:"relative"}}>
-                <p className='firstexp'>Kozmetik ürünlerin içeriklerinin kullanım amacına 
-                uygunluğunu ve formülasyonlarını değerlendirerek size doğru bilgiyi sunuyoruz. Daha fazla ayrıntı için
-               arama butonuna tıklayın!
-                  </p>
-                  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-                <br /><br />
-                <form action="" style={{position:"absolute",top:"380px", }} >
-                    <input className="mt-3" type="search" placeholder="Ürün ismi.." required />
-                    <i class="fa fa-search"></i>
-                </form> 
+      <Carousel fade variant="dark" interval={null}     >
+        <Carousel.Item className=''>
+          <img
+            className="d-block w-100 sldr  "
+            src={pattern5}
+            alt="First slide"
+          />
+          <Carousel.Caption >
+          
+            <div className='wr d-block animated animatedFadeInUp fadeInUp' >
+              <h2 style={{ textAlign: "left", fontFamily: " 'Teko', sans-serif", fontSize: "50px", }}>Ne kullandığını bil.</h2>
+              <p className='carouselCap' >İyi bir cilt bakım rutini sağlıklı ve ışıltılı bir cilt için şarttır. Ancak, hangi kozmetik ürünleri seçeceğimizi ve kullanacağımızı bilmek kolay değildir. Kozmetik endüstrisi oldukça karmaşıktır ve içerik listelerindeki kimyasal isimler genellikle anlaşılması zor olabilir.</p>
             </div>
-            
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className=''>
+          <img
+            className="d-block w-100 sldr "
+            src={pattern4}
+            alt="Second slide"
+          />
+
+          <Carousel.Caption>
+            <div className='wr animated animatedFadeInUp fadeInUp' >
+             <div><p className='carouselCap'>Bu nedenle, sizin için en uygun dermokozmetik ürünleri bulmanızda yardımcı olmaya karar verdik! Markaların ürünlerinin içeriklerinin kullanım amacına uygunluğunu ve formülasyonlarını değerlendirerek size doğru bilgiyi sunuyoruz. Böylece, cildinizin ihtiyaçlarına uygun olarak seçtiğiniz ürünlerle sağlıklı bir cilt bakım rutini oluşturabilirsiniz.</p></div> 
+             <div className="frame">
+                <p className='carouselCap'>  Daha fazla ayrıntı için  <a class="bouton1" href="#">tıkla.</a>
+
+</p>  </div> 
+              </div>
+           
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
     </div>
-
-
-
-
-
-
-
 
 
   )

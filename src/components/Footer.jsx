@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
       </Row>
       <hr/>
-      <div className='sosyalmedya'> <img src={facebook} />  <img src={instagram} /> <img src={twitter} /> <img src={telegram} /> <img src={youtube} /> </div>
+      <div className='sosyalmedya'> <img src={facebook} />  <img src={instagram} /> <img src={twitter} /> <img src={youtube} /> <img src={telegram} /> </div>
 
     </div>
   )

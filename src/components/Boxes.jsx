@@ -11,7 +11,7 @@ import icon5 from "../assets/icon5.png";
 import icon6 from "../assets/icon6.png";
 const Boxes = () => {
   return (
-    <div className='ct p-3' >
+    <div className='ct shaper' >
       <Row className=' p-5'>
         <Col className='boxes '><figure class="box"><img class="box__img" src={icon2} alt="img"/><figcaption class="box__caption">PH DENGESİ</figcaption></figure></Col>
         <Col className='boxes '><figure class="box"><img class="box__img" src={icon3} alt="img"/><figcaption class="box__caption">doğallık</figcaption></figure></Col>

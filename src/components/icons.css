@@ -11,16 +11,17 @@
 } 
 
 .ct{
-    margin-top: -16px;
+    margin-top: 70px;
     max-height: 200px;
-    background-image: url( "../assets/pattern3.jpg");
+    background-image: url( "../assets/pattern5.jpg");
     background-attachment: fixed;
     background-size:cover;
+
 }
 
 .box {
     padding: 30px;
-    border: 2px solid rgba(255, 255, 255, 0.082);
+    border: 2px solid rgba(255, 255, 255, 0.553);
     border-radius: 100%;
     display: flex;
     transform: translate3d(-50%, -50%, 0);
@@ -68,3 +69,4 @@
     transform: translate3d(-50%, -30%, 0);
     transition: all 250ms ease-in-out;
     }
+

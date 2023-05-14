@@ -7,7 +7,6 @@ import cap1 from "../assets/cap1.jpg";
 import cap2 from "../assets/cap2.jpg";
 import cap3 from "../assets/cap3.jpg";
 import cap4 from "../assets/cap4.jpg";
-import rose from "../assets/rosee.jpg";
 import "./slide.css"
 
 const Slide = () => {

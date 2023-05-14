@@ -42,13 +42,13 @@
 }
 
 
-.col {
+.ftr {
     width: 190px;
     float: left;
     padding: 0px 20px 20px 20px;
     margin-left: 50px;
   }
-   .col h1 {
+   .ftr h1 {
     
     font-size: 16px;
     line-height: 17px;
