@@ -2,7 +2,6 @@ import React from 'react'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-
 import cap1 from "../assets/cap1.jpg";
 import cap2 from "../assets/cap2.jpg";
 import cap3 from "../assets/cap3.jpg";
@@ -12,17 +11,16 @@ import "./slide.css"
 const Slide = () => {
 
 
-    
-    
+
     return (
         <div className='aq'>
 
-          
+         
 
             <div style={{ textAlign: "center", marginTop: "90px", marginBottom: "80px" }} ><h3 style={{ fontFamily: " 'Teko', sans-serif", fontSize: "30px", letterSpacing: "3px", }}>Peki neden Cosmoweb'e uğramalısın?</h3></div>
             <div className='sliderow  '>
 
-            <figure class="snip0016">
+                <figure class="snip0016">
                     <img src={cap1} alt="sample42" className='imgg' />
                     <figcaption>
                         <h2>Doğru kullanım bilgileri</h2>

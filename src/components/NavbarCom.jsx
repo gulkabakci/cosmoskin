@@ -18,7 +18,6 @@ function NavbarCom() {
   return (
 
     <div className='nvbr ' >
-
       <Row className='str ' >
 
         <Col className='topbar' >
@@ -40,8 +39,8 @@ function NavbarCom() {
         </Col>
 
       </Row>
-
-      <Carousel fade variant="dark" interval={null}     >
+      
+      <Carousel fade variant="dark" className='mt-1' interval={null}     >
         <Carousel.Item className=''>
           <img
             className="d-block w-100 sldr  "

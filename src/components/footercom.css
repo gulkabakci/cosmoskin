@@ -5,8 +5,8 @@
 .footer{
     padding-top: 50px;
     height: 430px;
-    background-image:  url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');    
+    background-image: url("../assets/cloud.png"),
+    url("../assets/cloud.png");
     background-color:#095584a9;
     background-repeat: repeat-x;
     background-position: 
