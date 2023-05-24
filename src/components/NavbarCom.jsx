@@ -18,7 +18,7 @@ function NavbarCom() {
   return (
 
     <div className='nvbr ' >
-      <Row className='str ' >
+      <Row className='str w-100' >
 
         <Col className='topbar' >
           <div className='socialdiv d-flex'> <div className='fcc'> <img className='social' src={phone} title="Telefon" /></div> <p className='pq'> &nbsp;  &nbsp; 0546254342</p> </div>
