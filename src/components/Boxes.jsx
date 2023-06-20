@@ -9,18 +9,14 @@ import icon3 from "../assets/icon3.png";
 import icon4 from "../assets/icon4.png";
 import icon5 from "../assets/icon5.png";
 import icon6 from "../assets/icon6.png";
+
+
 const Boxes = () => {
+
   return (
 
     <div>
-      <div class="searchbox">
-      <div style={{ textAlign: "center", marginTop: "90px", marginBottom: "80px" }} ><h3 style={{ fontFamily: "  'Raleway', Arial, sans-serif", fontSize: "25px", }}>İçeriğini merak ettiğin ürüne ulaşmak için ara.</h3></div>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-        <form action="">
-          <input type="search" required />
-          <i class="fa fa-search"></i>
-        </form>
-      </div>
+     
       <div className='ct shaper' >
         <Row className=' p-5'>
           <Col className='boxes '><figure class="box"><img class="box__img" src={icon2} alt="img" /><figcaption class="box__caption">PH DENGESİ</figcaption></figure></Col>

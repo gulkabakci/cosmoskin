@@ -29,12 +29,12 @@ const Footer = () => {
             </ul>
           </div>
           <div class="col ftr">
-            <h1>education</h1>
+            <h1>Müşteri Hizmetleri</h1>
             <ul>
-              <li>Professional Program in UserExperience (UX) Design–May 2023</li>
-              <li>Google UX Design Professional Certificate–2023 </li>
-              <li>Certificate of Achievement, Canada College–2019</li>
-              <li>AA Graphic Design, College of San Mateo</li>
+              <li>Orijinallik ve Memnuniyet Garantisi</li>
+              <li>Şartlar, Politikalar ve Yasal Sözleşmeler </li>
+              <li>Kargo / Ödeme / İade</li>
+              <li>Destek Portalı</li>
             </ul>
           </div>
           <div class="col ftr">

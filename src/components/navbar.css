@@ -8,7 +8,7 @@
 
 
  .sldr{
-    max-height:700px;
+    max-height:600px;
     object-fit: cover;
 }
 .fcc{
@@ -24,28 +24,7 @@
     
 }
 
-.nvbr{
-    background-color:#dbf4f7;
-    box-shadow: 0px 15px 10px -15px #3a3939;    
 
-}
-
-.str{
-    background-color:#dbf4f7;
-    box-shadow: 0px 15px 10px -15px #c7d7e2; 
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    right: 0;
-}
-
-.pq{
-    font-size: 23px;
-    cursor: pointer;
-    font-family: 'Teko', sans-serif;
-    color:rgb(17, 67, 111);
- 
-}
 
 
 
@@ -60,19 +39,7 @@
 
 }
 
-#logo{
-    max-height: 65px;
-    display: block; 
-    margin: auto;
-}
 
-.fc:hover{
-    transition: 0.3s; 
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);  
-    -moz-transform: scale(1.2);
-    transform: scale(1.1);
-}
 .topbar{
     display: flex;
     justify-content: space-evenly;
@@ -193,7 +160,7 @@
 
 .wr{
     width: 50%;
-    margin-top: -500px;
+    margin-top: -400px;
 
 }
 
@@ -233,3 +200,5 @@
   padding: 10px 30px 10px;
 
 }
+
+
