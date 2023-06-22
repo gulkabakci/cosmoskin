@@ -1,7 +1,7 @@
 import React from 'react'
 import { fontFamily, fontWeight } from '@mui/system'
 import logo from "../assets/lotus.png"
-import "./navbar.css"
+import "./header.css"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -15,8 +15,11 @@ const Header = () => {
 
     return (
         <div className='str'>
+            <div className='iletisim'>
+                Whatsapp Destek: 0555 343 54 00
+            </div>
             <Row >
-                <Col classname="fc">
+                <Col className="fc">
                     <div><img id='logo' src={logo} alt="" /></div>
                     <div className='pq' style={{ textAlign: "center" }}> &nbsp; cosmoskin</div>
                 </Col>
@@ -24,13 +27,14 @@ const Header = () => {
                 <Col >
                     <form action="#" method="post" style={{display:"inline"}}>
                     <input type="text" name="search" placeholder="    Daha fazlası için ara..." className='search' />
-                    <lord-icon
+                    <a href='#' ><lord-icon
+                            
                             id="search-icon"
                             src="https://cdn.lordicon.com/hgbzryoa.json"
                             trigger="hover"
                             colors="primary:#e8308c,secondary:#a2cee9,tertiary:#e8308c"
                             style={{ width: "30px", height: "30px" }}>
-                        </lord-icon> 
+                        </lord-icon></a> 
                     </form>
                 </Col>
 
@@ -43,13 +47,7 @@ const Header = () => {
                                 colors="primary:#f64698,secondary:#a2cee9"
                                 style={{ width: "35px", height: "35px" }}>
                             </lord-icon> <span>Hesabım</span>  </a> </li>
-                        <li><a href="" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                            <lord-icon class="header-icons"
-                                src="https://cdn.lordicon.com/ggihhudh.json"
-                                trigger="hover"
-                                colors="primary:#136f82,secondary:#a2cee9,tertiary:#e8308c"
-                                style={{ width: "35px", height: "35px" }}>
-                            </lord-icon>  <span>Sepetim</span> </a></li>
+
                         <li><a href="" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                             <lord-icon class="header-icons"
                                 src="https://cdn.lordicon.com/iwaotjbp.json"
@@ -57,6 +55,13 @@ const Header = () => {
                                 colors="primary:#e964a2,secondary:#a2cee9"
                                 style={{ width: "35px", height: "35px" }}>
                             </lord-icon> <span>Favorilerim</span>  </a></li>
+                            <li><a href="" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                            <lord-icon class="header-icons"
+                                src="https://cdn.lordicon.com/ggihhudh.json"
+                                trigger="hover"
+                                colors="primary:#136f82,secondary:#a2cee9,tertiary:#e8308c"
+                                style={{ width: "35px", height: "35px" }}>
+                            </lord-icon>  <span>Sepetim</span> </a></li>
                         <li><a href="" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                             <lord-icon
                                 src="https://cdn.lordicon.com/jyijxczt.json"

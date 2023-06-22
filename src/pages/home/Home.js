@@ -5,11 +5,12 @@ import Boxes from '../../components/Boxes';
 import Footer from '../../components/Footer';
 import Section from '../../components/Section';
 import Header from '../../components/Header';
+import Cards from '../../components/Cards'
 const Home = () => {
   return (
     <div>
         <Header/>
-        <NavbarCom/>
+        <Cards/>
         <Boxes/>
         <Slide/>
         <Section/>
