@@ -12,12 +12,12 @@ import Col from 'react-bootstrap/Col';
 
 const Footer = () => {
   return (
-    <div class="footer">
+    <div className="footer">
       <Row >
-      <div class="col">
+      <div className="col">
       <img style={{ maxHeight: "70px", paddingLeft: "130px", marginTop: "80px" }} src={logo} />
       </div>
-          <div class="col ftr">
+          <div className="col ftr">
             <h1>Kurumsal</h1>
             <ul>
               <li>Hakkımızda</li>
@@ -28,7 +28,7 @@ const Footer = () => {
 
             </ul>
           </div>
-          <div class="col ftr">
+          <div className="col ftr">
             <h1>Müşteri Hizmetleri</h1>
             <ul>
               <li>Orijinallik ve Memnuniyet Garantisi</li>
@@ -37,7 +37,7 @@ const Footer = () => {
               <li>Destek Portalı</li>
             </ul>
           </div>
-          <div class="col ftr">
+          <div className="col ftr">
             <h1>technical skills</h1>
             <ul>
               <li>Figma & XD</li>

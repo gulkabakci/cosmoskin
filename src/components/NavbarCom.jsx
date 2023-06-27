@@ -5,9 +5,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
-import pattern5 from "../assets/bg1.jpg";
-import pattern4 from "../assets/bg3.jpg";
-
 
 import React from 'react'
 
@@ -21,7 +18,6 @@ function NavbarCom() {
         <Carousel.Item className=''>
           <img
             className="d-block w-100 sldr  "
-            src={pattern5}
             alt="First slide"
           />
           <Carousel.Caption >
@@ -35,7 +31,6 @@ function NavbarCom() {
         <Carousel.Item className=''>
           <img
             className="d-block w-100 sldr "
-            src={pattern4}
             alt="Second slide"
           />
 
@@ -43,7 +38,7 @@ function NavbarCom() {
             <div className='wr animated animatedFadeInUp fadeInUp' >
               <div><p className='carouselCap'>Bu nedenle, sizin için en uygun dermokozmetik ürünleri bulmanızda yardımcı olmaya karar verdik! Markaların ürünlerinin içeriklerinin kullanım amacına uygunluğunu ve formülasyonlarını değerlendirerek size doğru bilgiyi sunuyoruz. Böylece, cildinizin ihtiyaçlarına uygun olarak seçtiğiniz ürünlerle sağlıklı bir cilt bakım rutini oluşturabilirsiniz.</p></div>
               <div className="frame">
-                <p className='carouselCap'>  Daha fazla ayrıntı için  <a class="bouton1" href="#">tıkla.</a>
+                <p className='carouselCap'>  Daha fazla ayrıntı için  <a className="bouton1" href="#">tıkla.</a>
 
                 </p>  </div>
             </div>

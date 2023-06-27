@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { fontFamily, fontWeight } from '@mui/system'
 import logo from "../assets/lotus.png"
 import "./header.css"
@@ -8,13 +8,14 @@ import Col from 'react-bootstrap/Col';
 import "./header.css"
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
-
+import { useRef } from 'react';
+import { useDispatch } from 'react-redux';
 const Header = () => {
 
     defineElement(lottie.loadAnimation);
 
     return (
-        <div className='str'>
+        <div className='str' >
             <div className='iletisim'>
                 Whatsapp Destek: 0555 343 54 00
             </div>
@@ -25,16 +26,16 @@ const Header = () => {
                 </Col>
 
                 <Col >
-                    <form action="#" method="post" style={{display:"inline"}}>
-                    <input type="text" name="search" placeholder="    Daha fazlası için ara..." className='search' />
-                    <a href='#' ><lord-icon
-                            
+                    <form action="#" method="post" style={{ display: "inline" }}>
+                        <input type="text" name="search" placeholder="    Daha fazlası için ara..." className='search' />
+                        <a href='#' ><lord-icon
+
                             id="search-icon"
                             src="https://cdn.lordicon.com/hgbzryoa.json"
                             trigger="hover"
                             colors="primary:#e8308c,secondary:#a2cee9,tertiary:#e8308c"
                             style={{ width: "30px", height: "30px" }}>
-                        </lord-icon></a> 
+                        </lord-icon></a>
                     </form>
                 </Col>
 
@@ -55,7 +56,7 @@ const Header = () => {
                                 colors="primary:#e964a2,secondary:#a2cee9"
                                 style={{ width: "35px", height: "35px" }}>
                             </lord-icon> <span>Favorilerim</span>  </a></li>
-                            <li><a href="" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <li><a href="" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                             <lord-icon class="header-icons"
                                 src="https://cdn.lordicon.com/ggihhudh.json"
                                 trigger="hover"
@@ -63,12 +64,13 @@ const Header = () => {
                                 style={{ width: "35px", height: "35px" }}>
                             </lord-icon>  <span>Sepetim</span> </a></li>
                         <li><a href="" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                            <lord-icon
-                                src="https://cdn.lordicon.com/jyijxczt.json"
+                            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                            <lord-icon 
+                                src="https://cdn.lordicon.com/qmbxvtja.json"
                                 trigger="hover"
-                                colors="primary:#c7166f,secondary:#e964a2,tertiary:#a2cee9,quaternary:#e8308c"
+                                colors="primary:#ebe6ef,secondary:#ffc738"
                                 style={{ width: "35px", height: "35px" }}>
-                            </lord-icon> <span>Sipariş Takibi</span> </a></li>
+                            </lord-icon> <span>Karanlık Mod</span> </a></li>
                     </ul>
                 </Col>
             </Row>

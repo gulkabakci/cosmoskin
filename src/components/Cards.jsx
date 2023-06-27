@@ -20,8 +20,9 @@ const Cards = () => {
 
                 </lord-icon> </h3 ><br /> <p className='animated animatedFadeInUp fadeInUp'> <span style={{
                     fontFamily: "'Ubuntu', sans-serif", fontWeight: "300", fontStyle: "italic",
-                }} > Pore Medic - Pore Minish Bubble Foam</span>   <br /> Cilt Gözeneklerinizi Sihirli Bir Dokunuşla Temizleyin
-                Siz de pürüzsüz ve göz alıcı bir cilde sahip olmak için doğru yerdesiniz! Pore Minish Bubble Foam ile cilt bakım rutininizde devrim yaratın ve gözeneklerinize yeniden nefes aldırın. </p></div>
+                }} > Herbivore  <br /> prism 20 aha + 5 bha exfoliating glow facial</span>  <br />  AHA BHA Exfoliating Glow Facial, cildinizdeki ölü derileri arındırmak ve cildinizi yenilemek için özel olarak tasarlanmış bir yüz temizleme ürünüdür. İçeriğindeki AHA (Alfa Hidroksi Asit) ve BHA (Beta Hidroksi Asit) gibi etkili aktif bileşenler, cildinize nazik bir şekilde peeling yapar ve cildinizde biriken kir, yağ ve ölü hücreleri temizler.  
+
+                </p></div>
         </div>
     )
 }
