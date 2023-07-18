@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+
+
+#productimg{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.productdiv{
+    margin: 80px 200px ;
+}
+
+#productnum button{
+  color: rgb(245, 117, 149);
+}
+
+#fav{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
+
+
+.container {
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 30px;
+    margin-left: 80px;
+} 
+
+  .container .accordion {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding-bottom: 5px;
+  }
+  input {
+    position: absolute;
+  }
+  label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color:#e14062;
+    padding: 15px;
+    font-size: 20px;
+    height: 30px;
+    cursor: pointer;
+  }
+  label:hover {
+    width: 100%;
+  }
+  .container .accordion .content {
+    max-height: 0px;
+    padding: 0 15px;
+    color: #393939;
+    transition: all 0.35s;
+  }
+  .content{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .rotate {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: 0.25s;
+  }
+  input[type="checkbox"]:checked ~ .rotate {
+    transform: rotate(-180deg);
+  }
+  input[type="checkbox"]:checked ~ .content {
+    max-height: 100vh;
+    padding: 15px;
+  }
+  
+#productnum{
+    padding: 7px;
+    color: rgb(245, 117, 149);;
+    border: 1px solid rgb(245, 117, 149);;
+    border-radius: 5px;
+}
+
+#addtobasket{
+    margin-left: 5px;
+    text-align: center;
+    width: 400px;
+    color:rgb(242, 222, 230);
+    border: 1px solid #393939;
+    background-color:#393939 ;
+    border-radius: 4px;
+    padding: 7px;
+    transition: background-color 0.5s;
+}
+
+#addtobasket:hover{
+    background-color:#e14063c3 ;
+    border: 1px solid #8e8284;
+    color: #ffffff;
+
+}

@@ -10,7 +10,7 @@ const Cards = () => {
     return (
         <div className='sectionn animated animatedFadeInUp fadeInUp '>
 
-            <div> <img className='animated animatedFadeInUp fadeInUp' id="section-img" src={drjart} /> </div>
+            <div> <img className='animated animatedFadeInUp fadeInUp ' id="section-img" src={drjart} /> </div>
             <div className='section-txt' >  <h3 style={{ color: " #525252", fontFamily: "'Ubuntu', sans-serif" }}  >  Yeni ürün alarmı <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                 <lord-icon
                     src="https://cdn.lordicon.com/inrunzby.json"

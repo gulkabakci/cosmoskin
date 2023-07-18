@@ -17,38 +17,38 @@ const Slide = () => {
 
          
 
-            <div style={{ textAlign: "center", marginTop: "90px", marginBottom: "80px" }} ><h3 style={{ fontFamily: " 'Teko', sans-serif", fontSize: "30px", letterSpacing: "3px", }}>Peki neden Cosmoweb'e uğramalısın?</h3></div>
+            <div style={{ textAlign: "center", marginTop: "90px", marginBottom: "80px" }} ><h3 style={{ fontFamily: " 'Teko', sans-serif", fontSize: "30px", letterSpacing: "3px", }}>Peki neden Cosmoskin'e uğramalısın?</h3></div>
             <div className='sliderow  '>
 
                 <figure class="snip0016">
                     <img src={cap1} alt="sample42" className='imgg' />
                     <figcaption>
-                        <h2>Doğru kullanım bilgileri</h2>
-                        <p>Ürünün doğru kullanımı hakkında bilgi sağlayarak, ürünün etkili olmasını ve beklentilerinize uygun sonuçlar vermesini sağlarız.</p>
+                        <h2>Doğal Güzelliği Yansıtın</h2>
+                        <p>Cosmoskin, doğal güzelliğinizi ortaya çıkarmak ve desteklemek için özenle seçilmiş doğal ve organik kozmetik ürünleri sunar. Sağlıklı ve ışıltılı bir cilt, güvenle kullanabileceğiniz doğal ürünlerle mümkündür.</p>
                         <a href="#"></a>
                     </figcaption>
                 </figure>
                 <figure class="snip0016">
                     <img src={cap3} alt="sample42" className='imgg' />
                     <figcaption>
-                        <h2>Ürünleri karşılaştırma</h2>
-                        <p>Benzer ürünler arasında karşılaştırma yaparak hangi ürünün daha sağlıklı olduğunu belirlemeye yardımcı oluruz.</p>
-                        <a href="#"></a>
-                    </figcaption>
-                </figure>
-                <figure class="snip0016">
-                    <img src={cap2} alt="sample43" className='imgg' />
-                    <figcaption>
-                        <h2>BİLİNÇLİ  TÜKETİM</h2>
-                        <p>Ürünler hakkında doğru bilgi sağlayarak, bilinçli tüketim konusunda farkındalık yaratabilir ve tüketicilerin daha sağlıklı ve sürdürülebilir seçimler yapmalarına yardımcı oluruz.</p>
+                        <h2>Trendlere Uygun Ürünler</h2>
+                        <p>Kozmetik dünyasındaki trendleri takip eder ve en güncel ürünleri sizinle buluştururuz. Yeni çıkan ürünler, popüler markaların en son koleksiyonları ve sezonun en trend renkleri Cosmoskin'de yer alır. Modaya uygun ve stil sahibi olmak isteyenler için ideal bir seçenektir.</p>
                         <a href="#"></a>
                     </figcaption>
                 </figure>
                 <figure class="snip0016">
                     <img src={cap4} alt="sample43" className='imgg' />
                     <figcaption>
-                        <h2>Zararlı maddeleri tespit etme </h2>
-                        <p>Kozmetik ürünlerdeki bazı kimyasallar sağlık açısından zararlı olabilir.Bu maddeleri tespit ederek sağlıklı seçimler yapmalarına yardımcı oluruz.</p>
+                        <h2>Müşterİ Desteğİ</h2>
+                        <p> Cosmoskin, müşteri memnuniyetine büyük önem verir. Profesyonel ve deneyimli müşteri hizmetleri ekibimiz, sorularınızı yanıtlamak ve sorunlarınızı çözmek için her zaman hazırdır. Size en iyi hizmeti sunmak için buradayız.</p>
+                        <a href="#"></a>
+                    </figcaption>
+                </figure>
+                <figure class="snip0016">
+                    <img src={cap2} alt="sample43" className='imgg' />
+                    <figcaption>
+                        <h2>Genİş Ürün Yelpazesi </h2>
+                        <p>Cosmoskin, geniş bir kozmetik ürün yelpazesi sunar. Cilt bakımından makyaja, saç bakımından vücut ürünlerine kadar pek çok kategoriye ve markaya yer verir. İhtiyaçlarınıza ve tercihlerinize uygun ürünleri tek bir yerde bulabilirsiniz</p>
                         <a href="#"></a>
                     </figcaption>
                 </figure>

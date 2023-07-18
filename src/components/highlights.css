@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+#root{
+--swiper-theme-color:rgb(248, 87, 149);
+
+}
+button{
+    border: none;
+    font-family: 'Raleway', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.234);
+    color: rgba(225, 85, 127, 0.275);
+}
+.outdiv{
+    width: 280px;
+    height: 355px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.prd-img{
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    transition: opacity 0.4s;
+}
+
+    
+.prd-txt{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    text-transform: lowercase;
+    width: 100%;
+    padding: 15px;
+    transition: height 0.4s;
+
+}
+#incele{
+    position: absolute;
+    width: 35%;
+    height: 25px;
+    padding: 0px;
+    bottom: 10px;
+    left: 10px;
+    color: rgba(0, 0, 0, 0.597);
+    border-radius: 100px;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(225, 85, 127, 0.275);
+    visibility: hidden;
+}
+.outdiv:hover #incele{
+visibility: visible;
+}
+
+.outdiv:hover .prd-txt{
+    height: 120px;
+}
+
+#favv{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+#sb{
+    visibility: hidden;
+    padding: 8px;
+    transition: background-color 0.5s;
+    position: absolute;
+    color:  rgb(255, 251, 253);
+    background-color:  rgba(225, 85, 127, 0.46);
+    bottom: 10px;
+    font-size: 15px;
+    width: 70%;
+    right:15%;
+}
+
+#sb:hover{
+     background-color:rgba(225, 85, 127, 0.275); 
+     color:  rgb(221, 59, 108);
+}
+.outdiv:hover #sb{
+    visibility: visible;
+
+    }
+
+.swiper-scrollbar-drag{
+    display: none;
+}
+
+.swiper-scrollbar{
+    display: none;
+}
+.swiper-pagination{
+    display: none;
+}
+.swiper-button-prev{
+}
