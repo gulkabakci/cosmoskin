@@ -39,6 +39,7 @@ const favColor = ()=> {
   fav.current.style.color="#e14062";
 }
 
+
   return (
    <div>
      <div className='outdiv mx-5' >

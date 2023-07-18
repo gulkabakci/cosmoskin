@@ -5,6 +5,10 @@
  @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
  
 
+ .nvbr{
+  background-color:  rgb(226, 135, 154);
+  padding-bottom: 20px;
+ }
 
 .header-title{
   color: rgb(255, 255, 255);
@@ -21,7 +25,7 @@
 }
 
 .header-bg{
-  margin-top: -100px;
+  margin-top: -110px;
   background-image: url("../assets/bgg.jpg");
   background-position:top;
   background-repeat: no-repeat;
@@ -34,7 +38,7 @@
 .pq{
     font-size: 30px;
     cursor: pointer;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     text-align: center;
     margin-top: 25px;
     font-family: "Damion", cursive;
@@ -57,13 +61,13 @@
     background: transparent;
     border-radius: 50px;
     font-family: 'Raleway', Arial, sans-serif;
-    color:#000000;
-    border:2px solid #000000;
+    color:#ffffff;
+    border:2px solid #ffffff;
 
   }
   
   .search::placeholder{
-    color: #000000;
+    color: #ffffff;
     font-family: 'Raleway', Arial, sans-serif;
 
      

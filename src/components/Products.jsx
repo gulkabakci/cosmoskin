@@ -5,7 +5,9 @@
     import ReactDOM from 'react-dom'
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
     import {faHeart } from '@fortawesome/free-solid-svg-icons'
-    
+    import { useNavigate } from 'react-router-dom'
+
+    //her bir ürün kartı
     
     const Highlights = ({ product }) => {
     
@@ -39,10 +41,11 @@
         fav.current.style.color="#e14062";
       }
     
-    
+      const navigate = useNavigate()
+
       return (
         <div className='outdiv mx-5'  >
-          <div>  <img className='prd-img' src={product.image} /> </div>
+          <div>  <img className='prd-img' src={product.image} onClick={()=> navigate(`products/${product?.id}`)} /> </div>
           <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
         <div  >  <FontAwesomeIcon icon={faHeart} size="xl" onClick={favColor} ref={fav} style={{color: "#fcf0f0",cursor:"pointer"}}  id="fav"  /></div>
           <div className='prd-txt' >  <div> <span style={{ fontFamily: "'Varela Round', sans-serif", fontSize: "16px" }} > {product.title}  </span>  <span style={{ float: "right", textTransform: "uppercase", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "21px", }} >{product.price}TL </span>  </div>

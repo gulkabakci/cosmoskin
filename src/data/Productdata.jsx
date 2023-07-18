@@ -17,6 +17,8 @@ import biossance from "./productimage/BIOSSANCE.jpg"
 import caudalietoner from "./productimage/caudalietoner.jpg"
 import sugar from "./productimage/sugar.jpg"
 import biossance2 from "./productimage/biossance2.jpg"
+import GlowToner from "./productimage/GlowToner.jpg"
+
 
 import React from 'react'
 
@@ -42,14 +44,14 @@ import React from 'react'
       brand: "herbivore",
       type: "aha bha",
       use: `Cilt yenileme maskesi olarak haftada 1-2 kez kullanın.
-      Temiz ve kuru cilde, göz çevresinden kaçınarak ince, eşit bir tabaka halinde uygulayın.
-      10-15 dakika bekletin, ardından ılık su ile durulayın. Hassas ciltler için 5 dakika bekletin.
-      Besleyici bir Otçul Yüz Yağı ile devam edin.
-      Göz ile doğrudan temastan kaçının. Temas oluşursa, suyla yıkayın. Bu ürün, cildinizin güneşe karşı hassasiyetini artıran bir AHA içerir, bu nedenle SPF'yi her gün giydiğinizden ve yeniden uyguladığınızdan emin olun. Uygulama üzerine bir karıncalanma veya hafif kızarıklık normaldir. Tahriş kötüleşirse kullanmayı bırakın.`,
+        Temiz ve kuru cilde, göz çevresinden kaçınarak ince, eşit bir tabaka halinde uygulayın.
+        10-15 dakika bekletin, ardından ılık su ile durulayın. Hassas ciltler için 5 dakika bekletin.
+        Besleyici bir Otçul Yüz Yağı ile devam edin.
+        Göz ile doğrudan temastan kaçının. Temas oluşursa, suyla yıkayın. Bu ürün, cildinizin güneşe karşı hassasiyetini artıran bir AHA içerir, bu nedenle SPF'yi her gün giydiğinizden ve yeniden uyguladığınızdan emin olun. Uygulama üzerine bir karıncalanma veya hafif kızarıklık normaldir. Tahriş kötüleşirse kullanmayı bırakın.`,
       volume: "90g",
       price: 390
   
-    },    {
+    }, {
       id: 2,
       image: thenimetyou,
       title: "Living Temizleme Balmı  ",
@@ -94,10 +96,10 @@ import React from 'react'
       price: 140,
       volume: "190ml",
       use: `Geceleri, bir pamuğa dökün ve temiz, kuru yüzünüze dairesel hareketlerle uygulayın.
-      Seçtiğiniz OLEHENRIKSEN serum veya nemlendirici ile devam edin.
-      Sadece harici kullanım içindir. Talimatlara uygun kullan.
-      Bu ürün aktif bileşenler içerir; Ön kolda küçük bir miktar test etmenizi öneririz.
-      Güneş Yanığı Uyarısı: Bu ürün, cildinizin güneşe karşı hassasiyetini ve özellikle güneş yanığı olasılığını artırabilecek bir alfa hidroksi asit (AHA) içerir. Bir güneş koruyucu kullanın, koruyucu giysiler giyin ve bu ürünü kullandıktan sonra bir hafta boyunca güneşe maruz kalmayı sınırlayın. Göz bölgesinden kaçının. Göz ile teması halinde hemen yıkayınız.`
+        Seçtiğiniz OLEHENRIKSEN serum veya nemlendirici ile devam edin.
+        Sadece harici kullanım içindir. Talimatlara uygun kullan.
+        Bu ürün aktif bileşenler içerir; Ön kolda küçük bir miktar test etmenizi öneririz.
+        Güneş Yanığı Uyarısı: Bu ürün, cildinizin güneşe karşı hassasiyetini ve özellikle güneş yanığı olasılığını artırabilecek bir alfa hidroksi asit (AHA) içerir. Bir güneş koruyucu kullanın, koruyucu giysiler giyin ve bu ürünü kullandıktan sonra bir hafta boyunca güneşe maruz kalmayı sınırlayın. Göz bölgesinden kaçının. Göz ile teması halinde hemen yıkayınız.`
     }
     ,
     {
@@ -108,7 +110,7 @@ import React from 'react'
       brand: "laneige",
       type: "maske",
       use: `Geceleri, ürünü spatula ile dudaklarınıza bolca uygulayın. Ürünü bütün gece dudağınızda bekletirken, tatlı rüyalar görün. Sabahları fazlalığı nazikçe silin veya dudaklarınızı temizleyin. Haftada 1 ila 2 defa uygulayın.
-    `,
+      `,
       volume: "20gr",
       price: 760
   
@@ -119,12 +121,12 @@ import React from 'react'
       title: "Yatıştırıcı Onarıcı Set     ",
       exp: "Bu güçlendirilmiş çift Peptit formüllü Anti-aging Gece Serumu sayesinde kırışıklık & ince çizgi karşıtı bakım yapar, esnekliğini koruyarak cildi genç tutar.Yumuşak dokulu krem ise stresli cildi içeriğindeki yoğun Centella Asiatica, Guaiazulene ve Peptit ile rahatlatır, leke karşıtı bakım sunar.  ",
       brand: "klairs",
-  
+      volume: "20ml - 30ml",
       price: 350,
       type: "serum krem",
       use: `Serum: Cildinizi temizledikten sonra bu serumdan 3-4 damlayı cildinize uygulayıp emilmesini sağlayın. Oda sıcaklığında muhafaza edin. Buzdolabında saklarsanız kristalize olacaktır.
-      Krem:Cilt bakımı rutininizin son aşamasında cildinizdeki hassas bölgeye az miktarda uygulayıp tam emilmesi için hafif masaj yapın.
-    `,
+        Krem:Cilt bakımı rutininizin son aşamasında cildinizdeki hassas bölgeye az miktarda uygulayıp tam emilmesi için hafif masaj yapın.
+      `,
     },
     {
       id: 8,
@@ -133,10 +135,10 @@ import React from 'react'
       exp: "Cicapair™ Tiger Grass Color Correcting Treatment 15 Ml Kızarıklığı düzelten ve cildi UV hasarından ve çevresel saldırganlardan korumaya yardımcı olan, yeşilden bej rengine cilt rengini düzelten bir krem tedavisi.Tüm cilt tiplerine uygundur.- Kızarıklık - Düzensiz cilt tonu - Akne ve lekelere çözüm sunmaya yardımcı olur.Cicapair ™ Tiger Grass Renk Düzeltme Kremi, lekeleri kapatmak, cildin sağlığını ve canlılığını geri kazandırmak renk değiştiren bir kapsül içinde formüllenen hepsi bir arada çözüm sunar",
       brand: "drjart",
       type: "krem",
-  
+      volume: "50ml",
       price: 830,
       use: `Nemlendirdikten sonra, yüzünüze eşit miktarda küçük bir miktar sürün ve karıştırın.
-    Cilde masaj yaptıkça krem ​​yeşilden beje dönüşerek cilt tonunu eşitler.`,
+      Cilde masaj yaptıkça krem ​​yeşilden beje dönüşerek cilt tonunu eşitler.`,
   
     }
     ,
@@ -147,11 +149,10 @@ import React from 'react'
       exp: "Bu ampul, cildi hızlı bir şekilde sakinleştiren, cildinizin nemlenmiş ve tazelenmiş hissetmesini sağlayan yüksek nem içeriği ve çeşitli bitki özleri içerir. Centella Asiatica, Çay Ağacı ve Portulaca özleri gibi bileşenlerle tahrişi hafifletmeye ve cildi sakinleştirmeye yardımcı olur.",
       brand: "by ecom",
       use: `Temiz cilde 2-3 damla uygulayın (tonikten sonra)
-    Tamamen emilene kadar cilde hafifçe vurun
-    Tercih edilen nemlendirici ile takip edin`,
+      Tamamen emilene kadar cilde hafifçe vurun
+      Tercih edilen nemlendirici ile takip edin`,
       type: "ampul serum",
       volume: "30ml",
-  
       price: 500
     },
     {
@@ -162,7 +163,8 @@ import React from 'react'
       brand: "vt cosmetics",
       type: "cica krem",
       use: `Esans veya serum kullandıktan sonra, yüzünüze uygulamak için uygun miktarda dağıtın.`,
-      price: 370
+      price: 370,
+      volume: "50ml",
   
     },
     {
@@ -170,14 +172,15 @@ import React from 'react'
       image: roocares,
       title: "Rahatlatıcı esans yağı",
       exp: `Tek bir serumla 5 etki hedefler.
-      Cilt lekelerinin oluşumunu engeller ve var olan lekelerin giderilmesine yardımcı olur.
-      Cildin nem tutma kapasitesini maksimum seviyede yükseltir ve kolajen üretimini arttırır.
-      Donuk, mat, cansız ciltler için ideal bir parlaklık ve canlanma sağlar.
-      Var olan çizgi ve kırışıklık görünümünü azaltır, yenilerinin oluşumunu engeller, Cilt elastikiyetini arttırarak cildin daha sıkı ve pürüzsüz görünmesini sağlar.
-      `  ,
+        Cilt lekelerinin oluşumunu engeller ve var olan lekelerin giderilmesine yardımcı olur.
+        Cildin nem tutma kapasitesini maksimum seviyede yükseltir ve kolajen üretimini arttırır.
+        Donuk, mat, cansız ciltler için ideal bir parlaklık ve canlanma sağlar.
+        Var olan çizgi ve kırışıklık görünümünü azaltır, yenilerinin oluşumunu engeller, Cilt elastikiyetini arttırarak cildin daha sıkı ve pürüzsüz görünmesini sağlar.
+        `  ,
       brand: "roocares",
       type: "serum",
-      use: ``,
+      use: `Sıcak bir banyo yaparken, birkaç damla esans yağını banyo suyuna ekleyerek rahatlayabilirsiniz.Unutmayın ki esans yağları yalnızca destekleyici tedavi olarak kullanılmalıdır ve ciddi sağlık sorunlarında tıbbi danışmanlık yerine geçmez. Ayrıca, hamilelik, cilt rahatsızlıkları veya alerji durumunda mutlaka bir uzmana danışmalısınız. Herhangi bir esans yağı kullanırken, kullanım talimatlarını dikkatlice okumalı ve önerilen dozları aşmaktan kaçınmalısınız.    `,
+      volume: "50ml",
       price: 860
     }
     ,
@@ -186,13 +189,13 @@ import React from 'react'
       image: greenbare,
       title: "Sarı Kil Maskesi      ",
       exp: `Sarı Kil Yüz Maskemiz, hassas cildi sakinleştirmek ve yatıştırmak için hazırlanmış Marshmallow Kökü, Papatya ve Aynısefa ile yapılmıştır. Sıkıcı ve ihmal edilmiş bir ruh halinden, rahatlamış ve canlanmış bir hale geçmek istediğinizde bu lezzeti köpürtün. Yorgun cildiniz için sıcak bir kucaklaşma.
-      `  ,
+        `  ,
       brand: "green bare",
       type: "maske",
       use: `
-        Maske uygulamadan önce daima temizleyin.Ürünle birlikte verilen fırçayı kullanarak yüzünüze ince bir tabaka halinde uygulayın, göz ve ağız çevresinden kaçının.Maske yaklaşık %80 kuruyana kadar yüzünüzde bırakın, %100 kurumasını istemezsiniz çünkü çıkarılması daha zor olur ve silerken pürüzlü olabilir.
-        Ilık suyla durulayın ve ardından bir yüz yağı veya nemlendirici uygulayın.
-        Cildinizin ihtiyacına göre haftada 1-2 kez kullanın.`,
+          Maske uygulamadan önce daima temizleyin.Ürünle birlikte verilen fırçayı kullanarak yüzünüze ince bir tabaka halinde uygulayın, göz ve ağız çevresinden kaçının.Maske yaklaşık %80 kuruyana kadar yüzünüzde bırakın, %100 kurumasını istemezsiniz çünkü çıkarılması daha zor olur ve silerken pürüzlü olabilir.
+          Ilık suyla durulayın ve ardından bir yüz yağı veya nemlendirici uygulayın.
+          Cildinizin ihtiyacına göre haftada 1-2 kez kullanın.`,
       volume: "50g",
       price: 320
   
@@ -203,10 +206,11 @@ import React from 'react'
       image: featforskin,
       title: "aydınlatıcı serum ",
       exp: `Aktif ve doğal bileşenler arasındaki en iyi karışım, eşit olmayan cilt tonu görünümünü azaltır. Bakterileri ve ölü deri hücrelerini yok etmeye ve serbest radikallerin neden olduğu hasarı onarmaya yardımcı olmak için doğal bir Alfa Hidroksi Asit (AHA) formu olarak şeker akçaağaç özü içerir.
-        Düzensiz cilt tonuna neden olan hiperpigmentasyon görünümünü azaltan Traneksamik Asit. Bu bileşenler, cildinizin güneş ışığına duyarlılığını etkilemez.
-         `  ,
+          Düzensiz cilt tonuna neden olan hiperpigmentasyon görünümünü azaltan Traneksamik Asit. Bu bileşenler, cildinizin güneş ışığına duyarlılığını etkilemez.
+           `  ,
       brand: "feat for skin",
       type: "serum",
+      volume: "30ml",
       price: 240,
       use: `2-3 damlayı yeni temizlenmiş yüzün her yerine hafifçe vurun. Ekstra etkinlik ve koruma için nemlendirici ve güneş kremi (sabahları) ile katmanlayın. En iyi sonuçlar için en az 2 hafta boyunca her sabah ve akşam düzenli olarak kullanın. Herhangi bir tahriş meydana gelirse durdurun.        `,
     }
@@ -216,27 +220,29 @@ import React from 'react'
       image: brioge,
       title: "Organik Çay Ağacı Yağı ",
       exp: `Briogeo'nun B. Well™ Organik + Avustralya %100 Çay Ağacı Yağı sivilceyle savaşır ve cildinizi yatıştırarak saç derinizdeki kaşıntıyı hafifletir. Bu %100 organik, GDO'suz çay ağacı yağı, maksimum saflık ve güç için Avustralya çay ağacı yapraklarından ve buharla damıtılmış buhardan sürdürülebilir şekilde yetiştirilir ve kafa derisi kaşıntısını ve tahrişini azaltmaya ve küçük lekeleri yatıştırmaya yardımcı olan güçlü antimikrobiyal özelliklere sahiptir.
-         `  ,
+  `  ,
+      volume: "20ml",
+  
       brand: "feat for skin",
       type: "bitki yağı",
       price: 790,
       use: ` Lekeler ve tahriş olmuş ciltler için, steril bir pamuklu çubuk kullanarak temiz ve kuru ilgili bölgelere doğrudan uygulamadan önce suyla veya taşıyıcı bir yağla (jojoba yağı gibi) seyreltin. Kuru kafa derisi kaşıntısı için, birkaç damla çay ağacı yağını bir taşıyıcı yağa (hindistan cevizi yağı gibi) seyreltin, yatmadan önce temiz bir saç derisine masaj yapın ve ertesi sabah durulayın. En sevdiğiniz Briogeo™ şampuan ve saç kreminin saç derisini yatıştırıcı faydalarını artırmak için birkaç damla da eklenebilir. Günlük veya gerektiği gibi kullanın.
-      `,
+        `,
     },
     {
       id: 15,
       image: biossance,
       title: "DENİZ YOSUNU GÖZ KREMİ ",
       exp: `Ödüllü cruelty-free göz kremi, maksimum performans ve daha az görünür ince çizgi ve kırışıklık için güçlü deniz yosunu ve paracres özleri ile tüm alanı anında kaldırır. Deniz Yosunu Göz Kremi'nin hava-hafif dokusu temas halinde eriyerek derin nemlendirme sağlar ve arkasında makyaj için mükemmel bir tuval bırakı
-         `  ,
+           `  ,
       brand: "biossance",
       type: "göz kremi",
       price: 460,
       use: ` Yüzük parmağınızı kullanarak tüm göz çevresine göz kremini nazikçe uygulayın. Göz çevresine, şakağa ve kaş kemiğinin altına masaj yapın (göz kapaklarında kullanılabilir).
-      Günde iki kez, sabah ve akşam kullanın.
-      En iyi sonuçlar için, temizlemeden sonra ve serum ve nemlendiricilerden önce kullanın.
-      
-      `,
+        Günde iki kez, sabah ve akşam kullanın.
+        En iyi sonuçlar için, temizlemeden sonra ve serum ve nemlendiricilerden önce kullanın. `,
+      volume:"50ml",
+  
     }
     ,
   
@@ -245,19 +251,19 @@ import React from 'react'
       image: caudalietoner,
       title: "Vinoclean Nemlendirici Tonik  ",
       exp: ` Temizleyicilerimiz VINOCLEAN serisi altında yenilendi!
-      Vegan formüllere ve yüksek oranda doğal türevli içeriğe sahip, çevreye duyarlı yeni temizleyiciler.
-      Kusursuz makyaj temizliğinin vazgeçilmez adımı olan Nemlendirici Tonik, makyaj kalıntılarını temizlerken cildi canlandırmaya yardımcıdır.
-      İçeriğindeki nemlendirici  Vinolevure ve matlaştırıcı organik gül suyu ile canlanan, temizlenen ve yatışan cilt sonrasında uygulanan bakım ürünlerinin faydalarına hazır hale gelir.
-      Cilt temizliğini tamamlar.
-      Cildi canlandırır.
-      Nemlendirir ve yatıştırır.`,
+        Vegan formüllere ve yüksek oranda doğal türevli içeriğe sahip, çevreye duyarlı yeni temizleyiciler.
+        Kusursuz makyaj temizliğinin vazgeçilmez adımı olan Nemlendirici Tonik, makyaj kalıntılarını temizlerken cildi canlandırmaya yardımcıdır.
+        İçeriğindeki nemlendirici  Vinolevure ve matlaştırıcı organik gül suyu ile canlanan, temizlenen ve yatışan cilt sonrasında uygulanan bakım ürünlerinin faydalarına hazır hale gelir.
+        Cilt temizliğini tamamlar.
+        Cildi canlandırır.
+        Nemlendirir ve yatıştırır.`,
       brand: "caudalie",
       type: "tonik",
       use: `Sabah ve akşam bir pamuğa 3 pompa Nemlendirici Tonik alın.
-      ​Pamuğu temiz yüzünüzde ve boynunuzda nazikçe gezdirerek uygulayın. Durulama gerektirmez.
-      `,
+        ​Pamuğu temiz yüzünüzde ve boynunuzda nazikçe gezdirerek uygulayın. Durulama gerektirmez.
+        `,
       volume: "200ml",
-      price: 260
+      price: 260,
   
     },
     ,
@@ -267,20 +273,20 @@ import React from 'react'
       image: sugar,
       title: "çilekli yüz temizleyici ",
       exp: ` Sugar Strawberry Exfoliating Face Wash cilt temizleyici yumuşak peeling, 
-      cildi kirden arındırarak gözenekleri sıkılaştırır ve cilde olağanüstü pürüzsüz ve
-       yumuşak bir doku sağlar.Bu yüz temizleyici peeling gözenekleri sıkılaştırmak ve 
-       cilde daha aydınlık bir görünüm sağlamak için cilt üzerinde kademeli olarak eriyen
-        iki farklı büyüklükte şeker kristalleri ve cilde parlak, sağlıklı ve dinç bir görünüm
-         sunmak için ise çilek çekirdeği özü içerir. Yumuşak dokusuyla cildi nazikçe arındırıp
-          sebum fazlalığını, kiri ve makyajı temizlerken cildin nemini ve dengesini korur.`,
+        cildi kirden arındırarak gözenekleri sıkılaştırır ve cilde olağanüstü pürüzsüz ve
+         yumuşak bir doku sağlar.Bu yüz temizleyici peeling gözenekleri sıkılaştırmak ve 
+         cilde daha aydınlık bir görünüm sağlamak için cilt üzerinde kademeli olarak eriyen
+          iki farklı büyüklükte şeker kristalleri ve cilde parlak, sağlıklı ve dinç bir görünüm
+           sunmak için ise çilek çekirdeği özü içerir. Yumuşak dokusuyla cildi nazikçe arındırıp
+            sebum fazlalığını, kiri ve makyajı temizlerken cildin nemini ve dengesini korur.`,
       brand: "fresh",
       type: "face wash",
       use: `Eksfoliye Edici Temizleyiciyi nemli cildinize uygulayın. Şeker eriyene kadar ılık suyla nazikçe masaj yapın ve ardından durulayın.
-      Size özel bir temizlik ve daha yumuşak bir doku için daha fazla su kullanın.
-      Şeker peelingi günlük olarak kullanılabilir.    
-      `,
+        Size özel bir temizlik ve daha yumuşak bir doku için daha fazla su kullanın.
+        Şeker peelingi günlük olarak kullanılabilir.    
+        `,
       volume: "125ml",
-      price: 140
+      price: 140,
   
     },
   
@@ -294,12 +300,27 @@ import React from 'react'
       brand: "biossance",
       type: "c vitamini yağı",
       use: `Sabah ve akşam birkaç damla C Vitamini Gül Yağını temiz cilde hafifçe bastırın. Uzun süreli nemlendirmeyi kilitlemek için serum ve nemlendiricinizden sonra C Vitamini yağını kullanın. Ekstra nemli kapatıcılık için fondöteninize bir veya iki damla da ekleyebilirsiniz. 
-      `,
+        `,
       volume: "30ml",
-      price: 625
+      price: 625,
   
     },
    
+    {
+      id: 19,
+      image: GlowToner,
+      title: "Gözenek Sıkıştırıcı Yüz Toniği ",
+      exp: ` Sevilen Watermelon Glow koleksiyonunun en yeni üyesi olan bu sıkılaştırıcı tonik, görünür gözenekleri gözden uzak tutmaya yardımcı olur. Karpuz özü (teninizi yenileyici vitaminler, antioksidanlar ve amino asitlerle doldurmak için) ve güçlü asitlerle güçlendirilen bu toner, ultra pürüzsüz, parlak bir cilt için sorunlu gözenekleri nazikçe arındırmak ve tıkanıklıkları gidermek için çalışır.
+      `,
+      brand: "glow recipe",
+      type: "tonik",
+      use: `Temizledikten sonra, eşit bir cilt tonu görünümü ve hissi için avuç içlerinize dağıtın ve tamamen emilene kadar gözenek arındırıcı toneri yüz ve boyuna hafifçe bastırın. Pamuklu ped ile de uygulanabilir. Göz bölgesinden kaçının. Gün içerisinde güneş kremi ile takip edin
+        `,
+      volume: "150ml",
+      price: 825,
+  
+    },
+    
 ];
 
 
