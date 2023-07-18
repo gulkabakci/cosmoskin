@@ -12,12 +12,12 @@ const Header = () => {
             fontSize: "50px", fontFamily: "'Teko', sans-serif"
 
         }} >YENİ ÜRÜN</span>   <br /> Watermelon glow pha + bha pore tight toner <br /> <button onClick={()=> navigate(`products/19`)} className=' pb-3 px-3 mt-4 mx-4 bg-light border-0'
-            style={{ fontSize: "17px", fontFamily: " 'Signika', sans-serif" }}>Hemen İncele
+            style={{ fontSize: "17px", fontFamily: " 'Signika', sans-serif",color:"rgba(227, 54, 106, 0.652)" }}>Hemen İncele
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                 <lord-icon
                     src="https://cdn.lordicon.com/zmkotitn.json"
                     trigger="loop"
-                    colors="primary:#c85a96"
+                    colors="primary:#ee638c"
                     style={{ width: "30px", height: "30px", top: "10px" }}>
                 </lord-icon></button>  </div>
                 </div>

@@ -185,6 +185,20 @@ import React from 'react'
     }
     ,
     {
+      id: 19,
+      image: GlowToner,
+      title: "Gözenek Sıkıştırıcı Yüz Toniği ",
+      exp: ` Sevilen Watermelon Glow koleksiyonunun en yeni üyesi olan bu sıkılaştırıcı tonik, görünür gözenekleri gözden uzak tutmaya yardımcı olur. Karpuz özü (teninizi yenileyici vitaminler, antioksidanlar ve amino asitlerle doldurmak için) ve güçlü asitlerle güçlendirilen bu toner, ultra pürüzsüz, parlak bir cilt için sorunlu gözenekleri nazikçe arındırmak ve tıkanıklıkları gidermek için çalışır.
+      `,
+      brand: "glow recipe",
+      type: "tonik",
+      use: `Temizledikten sonra, eşit bir cilt tonu görünümü ve hissi için avuç içlerinize dağıtın ve tamamen emilene kadar gözenek arındırıcı toneri yüz ve boyuna hafifçe bastırın. Pamuklu ped ile de uygulanabilir. Göz bölgesinden kaçının. Gün içerisinde güneş kremi ile takip edin
+        `,
+      volume: "150ml",
+      price: 825,
+  
+    },
+    {
       id: 12,
       image: greenbare,
       title: "Sarı Kil Maskesi      ",
@@ -306,20 +320,8 @@ import React from 'react'
   
     },
    
-    {
-      id: 19,
-      image: GlowToner,
-      title: "Gözenek Sıkıştırıcı Yüz Toniği ",
-      exp: ` Sevilen Watermelon Glow koleksiyonunun en yeni üyesi olan bu sıkılaştırıcı tonik, görünür gözenekleri gözden uzak tutmaya yardımcı olur. Karpuz özü (teninizi yenileyici vitaminler, antioksidanlar ve amino asitlerle doldurmak için) ve güçlü asitlerle güçlendirilen bu toner, ultra pürüzsüz, parlak bir cilt için sorunlu gözenekleri nazikçe arındırmak ve tıkanıklıkları gidermek için çalışır.
-      `,
-      brand: "glow recipe",
-      type: "tonik",
-      use: `Temizledikten sonra, eşit bir cilt tonu görünümü ve hissi için avuç içlerinize dağıtın ve tamamen emilene kadar gözenek arındırıcı toneri yüz ve boyuna hafifçe bastırın. Pamuklu ped ile de uygulanabilir. Göz bölgesinden kaçının. Gün içerisinde güneş kremi ile takip edin
-        `,
-      volume: "150ml",
-      price: 825,
   
-    },
+  
     
 ];
 
