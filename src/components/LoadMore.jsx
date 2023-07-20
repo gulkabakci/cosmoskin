@@ -9,6 +9,8 @@ const imagePerRow = 4;
 
 const LoadMore = () => {
 
+    const [basket, setBasket] = useState([])
+
     const [next, setNext] = useState(imagePerRow);
     const handleMoreProduct = () => {
         setNext(next + imagePerRow);
@@ -37,7 +39,33 @@ const LoadMore = () => {
             }}>Ürünlere Göz At</div>
             <div className=" justify-center" style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", }} >
 
-                {productt?.slice(0, next)?.map((product, i) => <Products key={i} product={product}> </Products>)}
+                {productt?.slice(0, next)?.map((product, i) =>
+                    <Products
+                        key={i}
+                        product={product}
+                        basket={basket}
+                        setBasket={setBasket}
+                        onClick={() => {
+                            const arr = [...basket];
+                            if (arr.findIndex((ind) => {
+                                return product.id === ind.id
+                            }) === -1) {
+                                arr.push(product)
+                                setBasket(arr)
+                            }
+                            else {
+                                arr.map((item) => {
+                                    if (item.id === product.id) {
+                                        return product.piece += 1;
+                                    }
+                                    setBasket(arr);
+                                    
+                                })
+                            }
+                            console.log(basket)
+                        }} 
+                        >
+                    </Products>)}
                 {next < productt?.length && (
                     <div style={{ margin: "auto", }}> <button ref={btn} className="mt-5 btnload" onMouseOver={styleButton} onMouseOut={styledButton} onClick={handleMoreProduct} style={{ padding: "12px", fontFamily: "'Varela Round', sans-serif", border: "1px solid #e14062", borderRadius: "3px", backgroundColor: "#e14062", color: "white", }} >
                         daha fazla yükle
@@ -51,4 +79,3 @@ const LoadMore = () => {
 }
 
 export default LoadMore
-

@@ -35,6 +35,7 @@ import React from 'react'
       use: "BLUE TANSY Resurfacing Clarity Mask'i temizledikten ve uyguladıktan sonra cilde masaj yapın.Hidrasyonun korunmasına yardımcı olmak ve özel bir rutin oluşturmak için favori Herbivore yağınızı uygulayın. Lapis Blue Tansy Yüz Yağı öneririz.Hem gündüz hem de gece için uygundur.Serin, kuru bir yerde ve doğrudan güneş ışığından uzakta dik olarak saklayın.",
       volume: "1,7 ons | 50 mL cam kavanoz ",
       price: 250
+      ,piece:1
     },
     {
       id: 1,
@@ -50,6 +51,7 @@ import React from 'react'
         Göz ile doğrudan temastan kaçının. Temas oluşursa, suyla yıkayın. Bu ürün, cildinizin güneşe karşı hassasiyetini artıran bir AHA içerir, bu nedenle SPF'yi her gün giydiğinizden ve yeniden uyguladığınızdan emin olun. Uygulama üzerine bir karıncalanma veya hafif kızarıklık normaldir. Tahriş kötüleşirse kullanmayı bırakın.`,
       volume: "90g",
       price: 390
+      ,piece:1
   
     }, {
       id: 2,
@@ -61,6 +63,7 @@ import React from 'react'
       use: `Çifte temizlemenizin ilk adımı için, kuru cilde kuru cilt üzerine küçük bir miktar almak için spatulayı kullanın ve dairesel hareketlerle hafifçe masaj yapın. Yağ bazlı safsızlıkları emülsifiye etmek ve çıkarmak için bir miktar ılık su ekleyin. Yatıştırıcı Çay Temizleme Jeli ile su bazlı bir temizlik olan ikinci adıma geçmeden önce iyice durulayın.`,
       volume: "90g",
       price: 320
+      ,piece:1
   
     },
   
@@ -74,6 +77,7 @@ import React from 'react'
       use: `Temiz cilde göz ve dudaklardan kaçınarak cömert, eşit bir tabaka uygulayın. 5-10 dakika bekletin - maske kurumaz! Cilde dairesel hareketlerle masaj yaparken ılık su ile durulayın. En iyi sonuçlar için haftada 2-3 kez kullanın.`,
       volume: "100g",
       price: 560
+      ,piece:1
     },
     {
       id: 4,
@@ -85,6 +89,7 @@ import React from 'react'
       use: `Sabah ve akşam serumunuzdan sonra veya tek başına yüz ve boyun bölgesine uygulayın. `,
       volume: "50ml",
       price: 200
+      ,piece:1
     },
     {
       id: 5,
@@ -94,6 +99,7 @@ import React from 'react'
       brand: "ole henriksen",
       type: "tonik",
       price: 140,
+      piece:1,
       volume: "190ml",
       use: `Geceleri, bir pamuğa dökün ve temiz, kuru yüzünüze dairesel hareketlerle uygulayın.
         Seçtiğiniz OLEHENRIKSEN serum veya nemlendirici ile devam edin.
@@ -113,6 +119,7 @@ import React from 'react'
       `,
       volume: "20gr",
       price: 760
+      ,piece:1
   
     },
     {
@@ -127,6 +134,7 @@ import React from 'react'
       use: `Serum: Cildinizi temizledikten sonra bu serumdan 3-4 damlayı cildinize uygulayıp emilmesini sağlayın. Oda sıcaklığında muhafaza edin. Buzdolabında saklarsanız kristalize olacaktır.
         Krem:Cilt bakımı rutininizin son aşamasında cildinizdeki hassas bölgeye az miktarda uygulayıp tam emilmesi için hafif masaj yapın.
       `,
+      piece:1,
     },
     {
       id: 8,
@@ -139,7 +147,7 @@ import React from 'react'
       price: 830,
       use: `Nemlendirdikten sonra, yüzünüze eşit miktarda küçük bir miktar sürün ve karıştırın.
       Cilde masaj yaptıkça krem ​​yeşilden beje dönüşerek cilt tonunu eşitler.`,
-  
+      piece:1,
     }
     ,
     {
@@ -154,6 +162,7 @@ import React from 'react'
       type: "ampul serum",
       volume: "30ml",
       price: 500
+      ,piece:1
     },
     {
       id: 10,
@@ -165,6 +174,7 @@ import React from 'react'
       use: `Esans veya serum kullandıktan sonra, yüzünüze uygulamak için uygun miktarda dağıtın.`,
       price: 370,
       volume: "50ml",
+      piece:1
   
     },
     {
@@ -182,6 +192,7 @@ import React from 'react'
       use: `Sıcak bir banyo yaparken, birkaç damla esans yağını banyo suyuna ekleyerek rahatlayabilirsiniz.Unutmayın ki esans yağları yalnızca destekleyici tedavi olarak kullanılmalıdır ve ciddi sağlık sorunlarında tıbbi danışmanlık yerine geçmez. Ayrıca, hamilelik, cilt rahatsızlıkları veya alerji durumunda mutlaka bir uzmana danışmalısınız. Herhangi bir esans yağı kullanırken, kullanım talimatlarını dikkatlice okumalı ve önerilen dozları aşmaktan kaçınmalısınız.    `,
       volume: "50ml",
       price: 860
+      ,piece:1
     }
     ,
     {
@@ -196,6 +207,7 @@ import React from 'react'
         `,
       volume: "150ml",
       price: 825,
+      piece:1
   
     },
     {
@@ -212,6 +224,7 @@ import React from 'react'
           Cildinizin ihtiyacına göre haftada 1-2 kez kullanın.`,
       volume: "50g",
       price: 320
+      ,piece:1
   
     }
     ,
@@ -226,6 +239,7 @@ import React from 'react'
       type: "serum",
       volume: "30ml",
       price: 240,
+      piece:1,
       use: `2-3 damlayı yeni temizlenmiş yüzün her yerine hafifçe vurun. Ekstra etkinlik ve koruma için nemlendirici ve güneş kremi (sabahları) ile katmanlayın. En iyi sonuçlar için en az 2 hafta boyunca her sabah ve akşam düzenli olarak kullanın. Herhangi bir tahriş meydana gelirse durdurun.        `,
     }
     ,
@@ -236,7 +250,7 @@ import React from 'react'
       exp: `Briogeo'nun B. Well™ Organik + Avustralya %100 Çay Ağacı Yağı sivilceyle savaşır ve cildinizi yatıştırarak saç derinizdeki kaşıntıyı hafifletir. Bu %100 organik, GDO'suz çay ağacı yağı, maksimum saflık ve güç için Avustralya çay ağacı yapraklarından ve buharla damıtılmış buhardan sürdürülebilir şekilde yetiştirilir ve kafa derisi kaşıntısını ve tahrişini azaltmaya ve küçük lekeleri yatıştırmaya yardımcı olan güçlü antimikrobiyal özelliklere sahiptir.
   `  ,
       volume: "20ml",
-  
+      piece:1,
       brand: "feat for skin",
       type: "bitki yağı",
       price: 790,
@@ -256,6 +270,7 @@ import React from 'react'
         Günde iki kez, sabah ve akşam kullanın.
         En iyi sonuçlar için, temizlemeden sonra ve serum ve nemlendiricilerden önce kullanın. `,
       volume:"50ml",
+      piece:1,
   
     }
     ,
@@ -278,6 +293,7 @@ import React from 'react'
         `,
       volume: "200ml",
       price: 260,
+      piece:1,
   
     },
     ,
@@ -301,6 +317,7 @@ import React from 'react'
         `,
       volume: "125ml",
       price: 140,
+      piece:1
   
     },
   
@@ -317,6 +334,7 @@ import React from 'react'
         `,
       volume: "30ml",
       price: 625,
+      piece:1
   
     },
    

@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState} from 'react'
 import Slide from '../../components/Slide';
 import Boxes from '../../components/Boxes';
 import Footer from '../../components/Footer';
@@ -8,6 +8,7 @@ import Cards from '../../components/Cards'
 import ProductCards from '../../components/ProductCards';
 import Header from '../../components/Header';
 import LoadMore from '../../components/LoadMore';
+import İletisim from "../../components/İletisim"
 
 import card1 from "../../assets/card1.png";
 import card2 from "../../assets/card2.jpg";
@@ -104,6 +105,10 @@ const Home = () => {
 
 
 
+  const [basket, setBasket] = useState([])
+  
+
+
 
   return (
     <div>
@@ -122,7 +127,10 @@ const Home = () => {
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}>
           <div className=''  >
-            {productdata && productdata.map((productdata, i) => <SwiperSlide><Highlights key={i} productdata={productdata}> </Highlights></SwiperSlide>)}
+            {productdata && productdata.map((productdata, i) => <SwiperSlide>
+              <Highlights 
+              key={i}  
+              productdata={productdata} > </Highlights></SwiperSlide>)}
           </div>
         </Swiper>
       </div>
@@ -136,21 +144,12 @@ const Home = () => {
         {products && products.map((product, i) => (<ProductCards key={i} product={product} />))}
       </div>
 
-      {/* 
-      <div className='' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }} >
-        {productdata && productdata.map((productdata, i) => (<Highlights key={i} productdata={productdata} />))}
-      </div> */}
-
-{/* 
-      <div className='m-1 justify-center'>
-        <div className="justify-center"  style={{    display: "flex",flexDirection: "row",flexWrap : "wrap",}} >
-          {product && product.map((product, i) => <Products key={i} product={product}> </Products>)}
-        </div>
-      </div> */}
-
+    
       <LoadMore/>
       <Slide />
+      <İletisim/>
       <Section />
+     
 
     </div>
   )

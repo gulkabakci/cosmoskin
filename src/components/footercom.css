@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
-
+/*     background-color:#095584a9;
+ */
 .footer{
     padding-top: 50px;
     height: 350px;
     background-image: url("../assets/cloud.png"),
     url("../assets/cloud.png");
-    background-color:#095584a9;
+    background-color:#095584d8;
     background-repeat: repeat-x;
     background-position: 
       0 20%,
