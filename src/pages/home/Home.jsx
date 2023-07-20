@@ -114,7 +114,7 @@ const Home = () => {
     <div>
       <Header />
       <div style={{
-        textAlign: "left", textTransform: "uppercase", color: "rgba(227, 54, 106, 0.652)", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "28px", marginTop: "100px", marginBottom: "20px", marginLeft: "90px"
+        textAlign: "left", textTransform: "uppercase", color: "#4d5466", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "28px", marginTop: "100px", marginBottom: "20px", marginLeft: "90px"
       }} >CosmoskIn'İn En Sevİlenlerİ</div>
 
       <div className="justify-center d-flex mx-5 " style={{}} >
@@ -138,8 +138,8 @@ const Home = () => {
 
 
       <div style={{
-        textAlign: "center", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "22px", marginTop: "100px"
-      }} >En İyi Markaları Keşfet</div>
+                textAlign: "left", textTransform: "uppercase", color: "#4d5466", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "28px", marginTop: "100px", marginBottom: "20px", marginLeft: "90px"
+      }} >En İyİ Markaları Keşfet</div>
       <div className='' style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }} >
         {products && products.map((product, i) => (<ProductCards key={i} product={product} />))}
       </div>

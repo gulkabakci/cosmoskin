@@ -17,7 +17,7 @@ const Slide = () => {
 
          
 
-            <div style={{ textAlign: "center", marginTop: "90px", marginBottom: "80px" }} ><h3 style={{ fontFamily: "'Raleway', Arial, sans-serif", fontSize: "22px", letterSpacing: "1px", }}>Peki neden Cosmoskin'e uğramalısın?</h3></div>
+            <div style={{ textAlign: "center", marginTop: "90px", marginBottom: "80px" }} ><h3 style={{ fontFamily: "'Raleway', Arial, sans-serif", fontSize: "22px", letterSpacing: "1px",color:"#000000" }}>Peki neden Cosmoskin'e uğramalısın?</h3></div>
             <div className='sliderow  '>
 
                 <figure class="snip0016">

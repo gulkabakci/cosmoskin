@@ -8,7 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-    margin-top: -20px;
+    margin-top: 100px;
     height: 650px;
     display: flex;
     justify-content: center;
@@ -124,6 +124,7 @@
     margin-top: 20px;
     border-radius: 30px;
     padding: 5px 20px;
+    transition: background-color 0.5s;
     text-transform: uppercase;
   }
 
