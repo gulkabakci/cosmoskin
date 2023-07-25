@@ -7,7 +7,7 @@ import products from "../data/Productdata"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus,faHeart,faMinus } from '@fortawesome/free-solid-svg-icons'
-
+import { motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -63,8 +63,10 @@ const ProductDetail = () => {
   }
 
 
+
+
   return (
-    <div className="productdiv"  >
+    <motion.div className="productdiv"  initial={{opacity:0,translateY:30}} animate={{opacity:1,translateY:0}}>
       <div className='d-flex' style={{ position: "relative" }}>
         <img id="productimg" src={product.image}   />
         <div>
@@ -76,13 +78,14 @@ const ProductDetail = () => {
 
           <div style={{ marginTop: "30px", marginLeft: "80px", fontSize: "18px" }}>
             <span id="productnum"> <button onClick={() => (setCount(count - 1))}>-</button> {count} <button onClick={() => (setCount(count + 1))}>+</button></span>
-            <button id='addtobasket'  onMouseOver={()=> setBasket(`Sepete Ekle ${product.price * count} TL`)} onMouseOut={()=> setBasket(`Sepete Ekle`)} >{basket} </button>
+            <button id='addtobasket' 
+ onMouseOver={()=> setBasket(`Sepete Ekle ${product.price * count} TL`)} onMouseOut={()=> setBasket(`Sepete Ekle`)} >{basket} </button>
           </div>
 
 
           <div className="container"  > 
             <div className="accordion"     >
-              <input type="checkbox" id="Acc1" style={{ zIndex: "-1" }} />
+              <input type="checkbox" id="Acc1" style={{ display:"none" }} />
               <label htmlFor="Acc1">detaylar  <span style={{float:"right"}}><FontAwesomeIcon icon={faPlus} /></span> </label> 
               <div className="fas fa-chevron-down rotate"></div>
               <div className="content">
@@ -91,8 +94,8 @@ const ProductDetail = () => {
 
             </div>
             <div className="accordion" >
-              <input type="checkbox" id="Acc2" style={{ zIndex: "-1" }} />
-              <label  htmlFor="Acc2">kullanımı   <span style={{float:"right"}} ><FontAwesomeIcon icon={faMinus}/></span></label>
+              <input type="checkbox" id="Acc2" style={{ display:"none" }} />
+              <label  htmlFor="Acc2">kullanımı   <span style={{float:"right"}} ><FontAwesomeIcon icon={faPlus}/></span></label>
               <div className="fas fa-chevron-down rotate"></div>
               <div className="content">
                 {product.use}
@@ -102,7 +105,7 @@ const ProductDetail = () => {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   )
 
 }

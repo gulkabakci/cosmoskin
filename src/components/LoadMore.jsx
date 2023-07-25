@@ -1,6 +1,7 @@
-import { React, useState, useRef } from 'react'
+import { React, useState, useRef,useEffect } from 'react'
 import productt from '../data/Productdata';
 import Products from "./Products"
+import { motion } from 'framer-motion'; 
 
 
 
@@ -11,10 +12,37 @@ const LoadMore = () => {
 
     const [basket, setBasket] = useState([])
 
+    const saveToLocalStorage = (key, data) => {
+        localStorage.setItem(key, JSON.stringify(data));
+      };
+      
+      // Local Storage'dan veri çekmek için fonksiyon
+      const getFromLocalStorage = (key) => {
+        const data = localStorage.getItem(key);
+        return data ? JSON.parse(data) : null;
+      };
+      
+
+      // Sayfa yüklendiğinde Local Storage'dan sepet verisini çekmek için useEffect 
+  useEffect(() => {
+    const storedBasket = getFromLocalStorage('basket');
+    if (storedBasket) {
+        setBasket(storedBasket);
+    }
+  }, []);
+
+  // Sepet durumunu Local Storage'a kaydetmek için useEffect 
+  useEffect(() => {
+    saveToLocalStorage('basket', basket);
+  }, [basket]);
+
+
     const [next, setNext] = useState(imagePerRow);
     const handleMoreProduct = () => {
         setNext(next + imagePerRow);
     };
+
+
 
     const btn = useRef()
 
@@ -29,21 +57,42 @@ const LoadMore = () => {
     const styledButton = () => {
         btn.current.style.backgroundColor = "rgba(227, 54, 106, 0.652)";
         btn.current.style.color = "rgb(255, 255, 255)";
+    }
 
+    const container = {
+        visible:{
+            transition:{
+                staggerChildren:0.2
+            }
+        }
+    }
+
+    const item = {
+        hidden:{
+            opacity:0,
+            translateY:20
+        },
+        visible:{
+            opacity:1,
+            translateY:0
+        }
 
     }
+
     return (
         <div>
             <div style={{
                 textAlign: "left", textTransform: "uppercase", color: "rgba(227, 54, 106, 0.652)", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "28px", marginTop: "100px", marginBottom: "20px", marginLeft: "50px"
             }}>Ürünlere Göz At</div>
-            <div className=" justify-center" style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", }} >
+            <motion.div variants={container} initial="hidden"  animate="visible" className=" justify-center" style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", }} >
 
                 {productt?.slice(0, next)?.map((product, i) =>
-                    <Products
+                <motion.div variants={item}>
+                    <Products 
                         key={i}
                         product={product}
                         basket={basket}
+                        lastprice={product.piece*product.price}
                         setBasket={setBasket}
                         onClick={() => {
                             const arr = [...basket];
@@ -65,14 +114,13 @@ const LoadMore = () => {
                             console.log(basket)
                         }} 
                         >
-                    </Products>)}
+                    </Products></motion.div>)}
                 {next < productt?.length && (
-                    <div style={{ margin: "auto", }}> <button ref={btn} className="mt-5 btnload" onMouseOver={styleButton} onMouseOut={styledButton} onClick={handleMoreProduct} style={{ padding: "12px", fontFamily: "'Varela Round', sans-serif", border: "1px solid #e14062", borderRadius: "3px", backgroundColor: "#e14062", color: "white", }} >
-                        daha fazla yükle
-                    </button></div>
+                    <div style={{ margin: "auto", }}> <button ref={btn} className="mt-5 btnload" onMouseOver={styleButton} onMouseOut={styledButton} onClick={handleMoreProduct} style={{ padding: "12px", fontFamily: "'Varela Round', sans-serif", border: "1px solid #e14062", borderRadius: "3px", backgroundColor: "#e14062", color: "white",
+                }} > daha fazla yükle</button></div>
                 )}
 
-            </div>
+            </motion.div>
 
         </div>
     )

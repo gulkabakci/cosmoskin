@@ -1,10 +1,6 @@
 import {React,useState} from 'react'
 import Slide from '../../components/Slide';
-import Boxes from '../../components/Boxes';
-import Footer from '../../components/Footer';
 import Section from '../../components/Section';
-import Navbar from '../../components/Navbar';
-import Cards from '../../components/Cards'
 import ProductCards from '../../components/ProductCards';
 import Header from '../../components/Header';
 import LoadMore from '../../components/LoadMore';
@@ -20,9 +16,6 @@ import card7 from "../../assets/card7.jpg";
 import card8 from "../../assets/card8.jpg";
 import card9 from "../../assets/card9.png";
 import Highlights from '../../components/Highlights';
-import product from '../../data/Productdata';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 
 import 'swiper/css';
@@ -44,8 +37,8 @@ import 'swiper/css/scrollbar';
 
 
 import 'swiper/swiper-bundle.css';
-import Products from '../../components/Products';
 import productdata from "../../data/MostLoved"
+import { motion,useScroll,useSpring } from 'framer-motion'; 
 
 
 const Home = () => {
@@ -107,17 +100,35 @@ const Home = () => {
 
   const [basket, setBasket] = useState([])
   
+  const container = {
+    visible:{
+        transition:{
+            staggerChildren:0.2
+        }
+    }
+}
+
+const item = {
+    hidden:{
+        opacity:0,
+        translateY:40
+    },
+    visible:{
+        opacity:1,
+        translateY:0
+    }
+}
 
 
 
   return (
-    <div>
+    <motion.div initial={{opacity:0}} animate={{opacity:1}}   >
       <Header />
       <div style={{
         textAlign: "left", textTransform: "uppercase", color: "#4d5466", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "28px", marginTop: "100px", marginBottom: "20px", marginLeft: "90px"
       }} >CosmoskIn'İn En Sevİlenlerİ</div>
 
-      <div className="justify-center d-flex mx-5 " style={{}} >
+      <div className="justify-center d-flex mx-5 "  >
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y,]}
           spaceBetween={10}
@@ -127,10 +138,11 @@ const Home = () => {
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}>
           <div className=''  >
-            {productdata && productdata.map((productdata, i) => <SwiperSlide>
+            {productdata && productdata.map((productdata, i) => <SwiperSlide >
               <Highlights 
               key={i}  
               productdata={productdata} > </Highlights></SwiperSlide>)}
+              
           </div>
         </Swiper>
       </div>
@@ -151,7 +163,7 @@ const Home = () => {
       <Section />
      
 
-    </div>
+    </motion.div>
   )
 }
 

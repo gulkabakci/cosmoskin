@@ -7,9 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const İletisim = () => {
   return (
-    <div class="contain">
+   
+    <div class="contain"  >
 
-  <div class="wrapper">
+  <div class="wrapper" >
 
     <div class="form">
       <h4 style={{marginBottom:"35px",color:"white",  fontFamily: "'Raleway', Arial, sans-serif",
@@ -40,6 +41,7 @@ const İletisim = () => {
       </ul>
     </div>
   </div>
+
 </div>
   )
 }

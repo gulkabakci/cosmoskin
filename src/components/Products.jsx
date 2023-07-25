@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./highlights.css"
 import Button from 'react-bootstrap/Button';
+import Basket from './Basket';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import x from "../assets/x.png"
 import Navbar from "./Navbar";
@@ -9,10 +10,14 @@ import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
+import ProductDetail from '../pages/ProductDetail';
+import ViewBasket from '../pages/ViewBasket';
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 //her bir ürün kartı
 
-const Highlights = ({ product, onClick, basket, setBasket }) => {
+const Products = ({ product, onClick, basket, setBasket, lastprice }) => {
+
+  const handlebasket = onClick;
 
 
   const [imagePerRow, setImagePerRow] = useState(8);
@@ -21,11 +26,19 @@ const Highlights = ({ product, onClick, basket, setBasket }) => {
   const [value, setValue] = useState("Sepete Ekle");
   const btn = useRef()
 
-
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  <Navbar handleShow={handleShow} handleClose={handleClose} />
+
+  const [cost, setCost] = useState()
+  useEffect(() => {
+    const totalPrice = basket.reduce((pre, basket) => pre + (basket.price * basket.piece), 0)
+    setCost(totalPrice)
+    console.log(totalPrice)
+  }, [basket])
 
   const fav = useRef()
   const favColor = () => {
@@ -46,6 +59,25 @@ const Highlights = ({ product, onClick, basket, setBasket }) => {
     }
   }
 
+  const handleDecrement = (index) => {
+    // Ürün sayısını azaltan fonksiyon
+    // Eğer 1'den küçükse, 1 olarak tutarız.
+    if (basket[index].piece > 1) {
+      const updatedBasket = [...basket];
+      updatedBasket[index].piece -= 1;
+      setBasket(updatedBasket);
+    }
+  };
+
+  const handleIncrement = (index) => {
+    // Ürün sayısını artıran fonksiyon
+    const updatedBasket = [...basket];
+    updatedBasket[index].piece += 1;
+    setBasket(updatedBasket);
+  };
+
+  <ViewBasket product={product} handlebasket={handlebasket} basket={basket} setBasket={setBasket} lastprice={lastprice} />
+
   return (
 
 
@@ -57,36 +89,14 @@ const Highlights = ({ product, onClick, basket, setBasket }) => {
       <div className='prd-txt' >  <div> <span style={{ fontFamily: "'Varela Round', sans-serif", fontSize: "16px" }} > {product.title}  </span>  <span style={{ float: "right", textTransform: "uppercase", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "21px", }} >{product.price}TL </span>  </div>
         <span style={{ fontFamily: " 'Shadows Into Light', cursive", fontSize: "19px", marginBottom: "20px" }} > {product.brand}</span>  <br />
         <button id="sb" value={value} ref={btn} onClick={() => {
-          onClick();
+          handlebasket();
           handleShow();
         }}> {value} </button>
       </div>
 
 
       <div >
-        <Offcanvas show={show} onHide={handleClose} placement="end" style={{ backgroundColor: "rgb(253, 246, 251)", width: "500px" }} >
-          <Offcanvas.Header>
-            <Offcanvas.Title className='mt-5 ml-3' style={{ fontFamily: " 'Roboto Slab', serif" }}>sepetim</Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body >
-            <div style={{ marginTop: "-30px" }}>
-              <ul style={{ marginLeft: "0", paddingLeft: "0px", }} id="offcanvaslist">
-                {basket.map((product, index) => {
-                  return <div> <li id="offcanvasli" key={index}>
-                    <img id='offcanvasimage' src={product.image} />
-                    <p style={{ textTransform: "lowercase", color: "#393939", fontFamily: " 'Roboto Slab', serif", marginLeft: "15px" }} >{product.title}  <span style={{ position: "absolute", top: "7px", right: "12px" }}> <img onClick={() => removeBasket(product.id)} style={{ cursor: "pointer" }} src={x} /> </span> <br /> <span style={{ fontFamily: "'Shadows Into Light', cursive" }} >{product.brand}</span>
-                      <div id="offcanvasbutton"> <button onClick={() => (product.piece -= 1)}>-</button> {product.piece} <button onClick={() => (product.piece += 1)}>+</button></div>
-                    </p>
-                  </li>
-                  </div>
-
-                })}
-              </ul>
-            </div>
-            <div style={{}} > Toplam :  </div>
-
-          </Offcanvas.Body>
-        </Offcanvas>
+        <Basket show={show} setShow={setShow} handleClose={handleClose} basket={basket} setBasket={setBasket} removeBasket={removeBasket} onHide={handleClose} style={{ backgroundColor: "rgb(240, 240, 240)", width: "500px" }} />
       </div>
 
 
@@ -95,4 +105,4 @@ const Highlights = ({ product, onClick, basket, setBasket }) => {
   )
 }
 
-export default Highlights;
+export default Products;

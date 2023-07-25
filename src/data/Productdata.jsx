@@ -17,7 +17,7 @@ import biossance from "./productimage/BIOSSANCE.jpg"
 import caudalietoner from "./productimage/caudalietoner.jpg"
 import sugar from "./productimage/sugar.jpg"
 import biossance2 from "./productimage/biossance2.jpg"
-import GlowToner from "./productimage/GlowToner.jpg"
+import uvcut from "./productimage/uvcut.jpg"
 
 
 import React from 'react'
@@ -197,15 +197,21 @@ import React from 'react'
     ,
     {
       id: 19,
-      image: GlowToner,
-      title: "Gözenek Sıkıştırıcı Yüz Toniği ",
-      exp: ` Sevilen Watermelon Glow koleksiyonunun en yeni üyesi olan bu sıkılaştırıcı tonik, görünür gözenekleri gözden uzak tutmaya yardımcı olur. Karpuz özü (teninizi yenileyici vitaminler, antioksidanlar ve amino asitlerle doldurmak için) ve güçlü asitlerle güçlendirilen bu toner, ultra pürüzsüz, parlak bir cilt için sorunlu gözenekleri nazikçe arındırmak ve tıkanıklıkları gidermek için çalışır.
+      image: uvcut,
+      title: "UV Cut güneş kremi Super SPF 50+ PA++++ ",
+      exp: ` Can sıkıcı hasarlara karşı bariyer oluştururken güzel bir cilt veren yüz için bir güneş koruyucudur.
+      Ultraviyole ışınlarına, hava kirleticilere ve yakın kızılötesi ışınlara odaklanır ve cildi bunlardan koruyan bileşenler içerir.
+      Her ten rengine uyum sağlayan renk tasarımı ile beyazlatma olmadan parlak doğal bir parlaklık yaratır.
+      
       `,
-      brand: "glow recipe",
-      type: "tonik",
-      use: `Temizledikten sonra, eşit bir cilt tonu görünümü ve hissi için avuç içlerinize dağıtın ve tamamen emilene kadar gözenek arındırıcı toneri yüz ve boyuna hafifçe bastırın. Pamuklu ped ile de uygulanabilir. Göz bölgesinden kaçının. Gün içerisinde güneş kremi ile takip edin
+      brand: "orbis",
+      type: "güneş kremi",
+      use: `Elinize uygun bir miktar alarak güneş yanığını önlemek istediğiniz bölgeye azar azar uygulayın ve hemen eşit şekilde yayın.
+      Yüzlerde de kullanılabilir.
+      Fondöteni tekrar tekrar uygularken, bu ürünü cilde eşit ve sıkı bir şekilde uygulamanızı ve ardından bir makyaj bazı kullanmanızı öneririz.
+      
         `,
-      volume: "150ml",
+      volume: "50ml",
       price: 825,
       piece:1
   

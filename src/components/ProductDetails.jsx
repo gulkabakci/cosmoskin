@@ -15,8 +15,8 @@ const ProductDetails = () => {
 const [count, setCount] = useState(1);
 const [isButtonDisabled, setButtonDisabled] = useState(false);
 const [value,setValue] = useState("Sepete Ekle");
-const btn = useRef()
 
+const btn = useRef()
 
 const handleButtonClick = () => {
   if (count >= 1) {
@@ -34,10 +34,13 @@ const clickButton = () => {
 };
 
 
+
 const fav = useRef()
 const favColor = ()=> {
   fav.current.style.color="#e14062";
+
 }
+
 
 
   return (
