@@ -19,8 +19,10 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Products from "./Products"
 import productdata from '../data/Productdata';
+import Basket from './Basket';
 
-const Navbar = ( {handleClose,handleShow} ) => {
+const Navbar = ({isLoggedIn,setIsLoggedIn}) => {
+
 
     defineElement(lottie.loadAnimation);
 
@@ -28,10 +30,10 @@ const Navbar = ( {handleClose,handleShow} ) => {
 
     const ref = React.createRef();
 
-
+      
     const [showBasket, setShowBasket] = useState(false);
-    const handleShowBasket = () => {
-        setShowBasket(true);
+    const handleBasketClick = () => {
+        setShowBasket(!showBasket);
       };
 
 
@@ -66,14 +68,30 @@ const Navbar = ( {handleClose,handleShow} ) => {
                             overlay={
                                 <Popover id={`popover-positioned-${placement}`} className='' style={{ borderRadius:"10px",backgroundColor:"rgba(244, 244, 244, 0.108)",border: "1px solid white",width:"150px"}}>
                                     <Popover.Body  style={{textAlign:"center"}} >
-                                    <div >  <button className='myAccountButton px-4' onClick={() => navigate(`/login`)} >Giriş Yap</button>     </div>
-                                    <div >  <button className='myAccountButton px-4' onClick={() => navigate(`/register`)}>Üye Ol</button>     </div>
-
+                                        <div id='logpopover'>
+                                        {isLoggedIn ? ( // Eğer kullanıcı giriş yaptıysa çıkış yap butonunu göster
+              <div>
+                <button className='logoutButton px-3' onClick={() => {setIsLoggedIn(false);  window.location.reload()}}>
+                  Çıkış Yap
+                </button>
+              </div>
+            ) : (
+              // Kullanıcı giriş yapmadıysa giriş yap butonunu göster
+              <div>
+                <button className='myAccountButton px-4' onClick={() => navigate(`/login`)}>
+                  Giriş Yap
+                </button>
+                <button className='myAccountButton px-4' onClick={() => navigate(`/register`)}>
+                  Üye Ol
+                </button>
+              </div>
+            )}
+                                    </div>
                                     </Popover.Body>
                                 </Popover>
                             }
                         >
-                    
+                   
                     <li><a href="#" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                         <lord-icon
                             src="https://cdn.lordicon.com/bhfjfgqz.json"
@@ -107,13 +125,13 @@ const Navbar = ( {handleClose,handleShow} ) => {
                                 </lord-icon><span>Favorilerim</span>  </a></li>
                         </OverlayTrigger>
                     ))}
-                    <li  ><a href="#" onClick={handleShowBasket}  className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                    <li  ><a href="#" id='tikla' onClick={handleBasketClick}   className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                         <lord-icon
                             src="https://cdn.lordicon.com/hyhnpiza.json"
                             trigger="hover"
                             colors="primary:#ffffff"
                             style={{ width: "30px", height: "30px" }}>
-                        </lord-icon>  <span  > Sepetim</span> </a></li>
+                        </lord-icon>  <span o > Sepetim</span> </a></li>
                        <li><a  ref={ref}  href="#" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                         <lord-icon
@@ -126,6 +144,14 @@ const Navbar = ( {handleClose,handleShow} ) => {
                 </ul>
             </Col>
 
+      
+            {showBasket && (
+        <Basket
+          show={showBasket}
+          handleClose={() => setShowBasket(false)}
+          // Diğer prop değerlerini buraya ekleyin
+        />
+      )}
 
         </Row>
 

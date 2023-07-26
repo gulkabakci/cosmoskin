@@ -1,16 +1,11 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import "./highlights.css"
-import Button from 'react-bootstrap/Button';
 import Basket from './Basket';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import x from "../assets/x.png"
 import Navbar from "./Navbar";
-import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
-import ProductDetail from '../pages/ProductDetail';
 import ViewBasket from '../pages/ViewBasket';
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 //her bir ürün kartı
@@ -29,9 +24,12 @@ const Products = ({ product, onClick, basket, setBasket, lastprice }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
-  <Navbar handleShow={handleShow} handleClose={handleClose} />
+  function handleShow() {
+   setShow(true);
+   console.log("çalıştı")
+  }
+
 
   const [cost, setCost] = useState()
   useEffect(() => {
@@ -76,8 +74,7 @@ const Products = ({ product, onClick, basket, setBasket, lastprice }) => {
     setBasket(updatedBasket);
   };
 
-  <ViewBasket product={product} handlebasket={handlebasket} basket={basket} setBasket={setBasket} lastprice={lastprice} />
-
+  // <ViewBasket product={product} handlebasket={handlebasket} basket={basket} setBasket={setBasket} lastprice={lastprice} removeBasket={removeBasket} />
   return (
 
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import productt from '../data/Productdata';
+import "../components/highlights.css"
 
 const ViewBasket = (product,handlebasket,basket,setBasket,lastPrice,removeBasket) => {
 
@@ -21,8 +22,8 @@ const ViewBasket = (product,handlebasket,basket,setBasket,lastPrice,removeBasket
       };
     
   return (
-  <>
-                       {basket.map((product, index) => {
+  <>                
+                {basket.map((product, index) => {
                   return <div> <li id="offcanvasli" key={index}>
                     <img id='offcanvasimage' src={product.image} />
                     <p style={{ textTransform: "lowercase", color: "#393939", fontFamily: " 'Roboto Slab', serif", marginLeft: "15px" }} >{product.title}  <span style={{ position: "absolute", top: "13px", right: "15px" }}>

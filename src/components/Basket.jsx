@@ -1,9 +1,7 @@
 import {React,useState,useEffect} from 'react'
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import x from "../assets/x.png"
-import Navbar from './Navbar';
 
-const Basket = ({show,setShow,handleClose,basket,setBasket,removeBasket}) => {
+const Basket = ({show,setShow,handleClose,basket,setBasket,removeBasket,}) => {
 
     const [cost, setCost] = useState()
     useEffect(() => {
@@ -30,7 +28,6 @@ const Basket = ({show,setShow,handleClose,basket,setBasket,removeBasket}) => {
         setBasket(updatedBasket);
       };
     
-      <Navbar show={show} setShow={setShow} handleClose={handleClose} removeBasket={removeBasket} />
 
     return (
         <div>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 
 
-const imagePerRow = 4;
+const imagePerRow = 3;
 
 
 const LoadMore = () => {
@@ -51,7 +51,6 @@ const LoadMore = () => {
         btn.current.style.color = "rgba(227, 54, 106, 0.652)";
         btn.current.style.border = "1px solid rgba(227, 54, 106, 0.652)";
 
-
     }
 
     const styledButton = () => {
@@ -82,9 +81,9 @@ const LoadMore = () => {
     return (
         <div>
             <div style={{
-                textAlign: "left", textTransform: "uppercase", color: "rgba(227, 54, 106, 0.652)", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "28px", marginTop: "100px", marginBottom: "20px", marginLeft: "50px"
+                textAlign: "left", textTransform: "uppercase", color: "rgba(227, 54, 106, 0.652)", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "28px", marginTop: "100px", marginBottom: "20px", marginLeft: "150px"
             }}>Ürünlere Göz At</div>
-            <motion.div variants={container} initial="hidden"  animate="visible" className=" justify-center" style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", }} >
+            <motion.div variants={container} initial="hidden"  animate="visible" className="" style={{ display: "flex", flexDirection: "row", flexWrap: "wrap",justifyContent:"center" }} >
 
                 {productt?.slice(0, next)?.map((product, i) =>
                 <motion.div variants={item}>
@@ -115,13 +114,13 @@ const LoadMore = () => {
                         }} 
                         >
                     </Products></motion.div>)}
-                {next < productt?.length && (
-                    <div style={{ margin: "auto", }}> <button ref={btn} className="mt-5 btnload" onMouseOver={styleButton} onMouseOut={styledButton} onClick={handleMoreProduct} style={{ padding: "12px", fontFamily: "'Varela Round', sans-serif", border: "1px solid #e14062", borderRadius: "3px", backgroundColor: "#e14062", color: "white",
-                }} > daha fazla yükle</button></div>
-                )}
+            
 
             </motion.div>
-
+            {next < productt?.length && (
+                    <div style={{ display:"flex",justifyContent:"center" }}> <button ref={btn} className="mt-5 btnload" onMouseOver={styleButton} onMouseOut={styledButton} onClick={handleMoreProduct} style={{ padding: "12px", fontFamily: "'Varela Round', sans-serif", border: "1px solid #e14062", borderRadius: "3px", backgroundColor: "#e14062", color: "white",
+                }} > daha fazla yükle</button></div>
+                )}
         </div>
     )
 }

@@ -18,8 +18,8 @@ button{
     color: rgba(225, 85, 127, 0.275);
 }
 .outdiv{
-    width: 280px;
-    height: 355px;
+    width: 340px;
+    height: 300px;
     position: relative;
     margin: 10px;
     cursor: pointer;
@@ -28,8 +28,8 @@ button{
 
 
 .prd-img{
-    width: 280px;
-    height: 350px;
+    width: 340px;
+    height: 300px;
     object-fit: cover;
     transition: opacity 0.4s;
 }

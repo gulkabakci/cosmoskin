@@ -47,14 +47,16 @@ function App() {
     localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems));
   }, [users, cartItems, favoriteItems]);
 
+
+
   return (
     <div >
 
         < ToastContainer /> 
       <Router>
-      <Navbar  />
+      <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/"  element={<Home />} />
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} users={users} />} />
         <Route path="/register" element={<Register setUsers={setUsers} />} />
         <Route path="/" element={<Authentication isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />

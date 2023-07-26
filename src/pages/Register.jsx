@@ -21,14 +21,14 @@ const Register = ({ setUsers }) => {
       setUsers((prevUsers) => [...prevUsers, { username, password }]);
       console.log("Kayıt Başarılı!");
       console.log(username,password);
-      navigate("/");
-      // Kayıt başarılıysa, kullanıcıyı giriş sayfasına yönlendirebilirsiniz.
+      toast.success("Kaydınız oluşturuldu.");
+      navigate("/login");
     };
   
 
   return (
 
-    <section>
+    <div className='containerDiv'>
 
       <motion.div initial={{opacity:0}} animate={{opacity:1}}  className="form-box">
 
@@ -66,7 +66,7 @@ const Register = ({ setUsers }) => {
 
       </motion.div>
 
-    </section>
+    </div>
 
 
   )

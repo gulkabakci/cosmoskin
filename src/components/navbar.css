@@ -138,9 +138,17 @@ a:visited{
         font-family: 'Raleway', Arial, sans-serif;
         font-size: 17px;
         padding: 5px;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: transparent;
         transition: background-color 0.5s;
+}
+
+.logoutButton{
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 17px;
+  padding: 5px;
+  background-color: transparent;
 }
 
 .myAccountButton:hover{

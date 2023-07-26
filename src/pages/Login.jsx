@@ -35,7 +35,7 @@ const Login = ({ setIsLoggedIn, users }) => {
  
   return (
 
-    <section>
+    <div className='containerDiv'>
 
       <motion.div initial={{opacity:0}} animate={{opacity:1}}  className="form-box">
 
@@ -72,7 +72,7 @@ const Login = ({ setIsLoggedIn, users }) => {
 
       </motion.div>
       < ToastContainer /> 
-    </section>
+    </div>
 
 
   )

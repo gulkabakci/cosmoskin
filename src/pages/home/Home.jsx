@@ -133,7 +133,7 @@ const item = {
           modules={[Navigation, Pagination, Scrollbar, A11y,]}
           spaceBetween={10}
           loop={true}
-          slidesPerView={4}
+          slidesPerView={3}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}>
