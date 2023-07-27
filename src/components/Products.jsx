@@ -10,7 +10,7 @@ import ViewBasket from '../pages/ViewBasket';
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 //her bir ürün kartı
 
-const Products = ({ product, onClick, basket, setBasket, lastprice }) => {
+const Products = ({ product, onClick, basket, setBasket, lastprice,liked,setLiked }) => {
 
   const handlebasket = onClick;
 
@@ -38,10 +38,28 @@ const Products = ({ product, onClick, basket, setBasket, lastprice }) => {
     console.log(totalPrice)
   }, [basket])
 
+  const [isLiked, setisLiked] = useState(true);
   const fav = useRef()
-  const favColor = () => {
-    fav.current.style.color = "#e14062";
+
+
+  const isFavItem = () => {
+
+    setisLiked(!isLiked);
+      if(isLiked=== true){
+        fav.current.style.color = "#e14062";
+        setLiked([...liked, product]);
+        console.log("ekleyince:" ,liked)
+
+      }
+      else{
+        fav.current.style.color = "#fcf0f0";
+        setLiked(liked.filter(item => item.id !== product.id));
+        console.log("çıkarıncas:" ,liked)
+
+      }
+
   }
+
 
   const navigate = useNavigate()
 
@@ -82,7 +100,7 @@ const Products = ({ product, onClick, basket, setBasket, lastprice }) => {
       <div>  <img className='prd-img' src={product.image} onClick={() => navigate(`products/${product?.id}`)} /> </div>
       <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 
-      <div  >  <FontAwesomeIcon icon={faHeart} size="xl" onClick={favColor} ref={fav} style={{ color: "#fcf0f0", cursor: "pointer", top: "10px" }} id="fav" /></div>
+      <div  >  <FontAwesomeIcon icon={faHeart} size="xl" onClick={ isFavItem} ref={fav} style={{ color: "#fcf0f0", cursor: "pointer", top: "10px" }} id="fav" /></div>
       <div className='prd-txt' >  <div> <span style={{ fontFamily: "'Varela Round', sans-serif", fontSize: "16px" }} > {product.title}  </span>  <span style={{ float: "right", textTransform: "uppercase", fontFamily: "'Raleway', Arial, sans-serif", fontSize: "21px", }} >{product.price}TL </span>  </div>
         <span style={{ fontFamily: " 'Shadows Into Light', cursive", fontSize: "19px", marginBottom: "20px" }} > {product.brand}</span>  <br />
         <button id="sb" value={value} ref={btn} onClick={() => {

@@ -196,6 +196,29 @@ import React from 'react'
     }
     ,
     {
+      id: 17,
+      image: sugar,
+      title: "çilekli yüz temizleyici ",
+      exp: ` Sugar Strawberry Exfoliating Face Wash cilt temizleyici yumuşak peeling, 
+        cildi kirden arındırarak gözenekleri sıkılaştırır ve cilde olağanüstü pürüzsüz ve
+         yumuşak bir doku sağlar.Bu yüz temizleyici peeling gözenekleri sıkılaştırmak ve 
+         cilde daha aydınlık bir görünüm sağlamak için cilt üzerinde kademeli olarak eriyen
+          iki farklı büyüklükte şeker kristalleri ve cilde parlak, sağlıklı ve dinç bir görünüm
+           sunmak için ise çilek çekirdeği özü içerir. Yumuşak dokusuyla cildi nazikçe arındırıp
+            sebum fazlalığını, kiri ve makyajı temizlerken cildin nemini ve dengesini korur.`,
+      brand: "fresh",
+      type: "face wash",
+      use: `Eksfoliye Edici Temizleyiciyi nemli cildinize uygulayın. Şeker eriyene kadar ılık suyla nazikçe masaj yapın ve ardından durulayın.
+        Size özel bir temizlik ve daha yumuşak bir doku için daha fazla su kullanın.
+        Şeker peelingi günlük olarak kullanılabilir.    
+        `,
+      volume: "125ml",
+      price: 140,
+      piece:1
+  
+    },
+  
+    {
       id: 19,
       image: uvcut,
       title: "UV Cut güneş kremi Super SPF 50+ PA++++ ",
@@ -234,6 +257,20 @@ import React from 'react'
   
     }
     ,
+    {
+      id: 18,
+      image: biossance2,
+      title: "çilekli yüz temizleyici ",
+      exp: ` Bu lüks, hafif C vitamini yağı ile gözle görülür sonuçların (aydınlatma, sıkılaştırma ve nemlendirme) üçlüsünü deneyimleyin . Yağda çözünen, rafta dayanıklı C vitaminimiz, güçlü bir parlatıcı ve elastikiyet arttırıcıdır. Skualen nemi hapsederken Sakız Adası kristal yağı, cildinize genç bir canlılık kazandırmak için sıkılaştırır ve canlandırır. Şam gülü yaprağı özümüz sakinleştirir ve yatıştırır, geride yumuşak, doğal bir koku bırakır.`,
+      brand: "biossance",
+      type: "c vitamini yağı",
+      use: `Sabah ve akşam birkaç damla C Vitamini Gül Yağını temiz cilde hafifçe bastırın. Uzun süreli nemlendirmeyi kilitlemek için serum ve nemlendiricinizden sonra C Vitamini yağını kullanın. Ekstra nemli kapatıcılık için fondöteninize bir veya iki damla da ekleyebilirsiniz. 
+        `,
+      volume: "30ml",
+      price: 625,
+      piece:1
+  
+    },
     {
       id: 13,
       image: featforskin,
@@ -302,47 +339,10 @@ import React from 'react'
       piece:1,
   
     },
-    ,
+    
+    
   
-    {
-      id: 17,
-      image: sugar,
-      title: "çilekli yüz temizleyici ",
-      exp: ` Sugar Strawberry Exfoliating Face Wash cilt temizleyici yumuşak peeling, 
-        cildi kirden arındırarak gözenekleri sıkılaştırır ve cilde olağanüstü pürüzsüz ve
-         yumuşak bir doku sağlar.Bu yüz temizleyici peeling gözenekleri sıkılaştırmak ve 
-         cilde daha aydınlık bir görünüm sağlamak için cilt üzerinde kademeli olarak eriyen
-          iki farklı büyüklükte şeker kristalleri ve cilde parlak, sağlıklı ve dinç bir görünüm
-           sunmak için ise çilek çekirdeği özü içerir. Yumuşak dokusuyla cildi nazikçe arındırıp
-            sebum fazlalığını, kiri ve makyajı temizlerken cildin nemini ve dengesini korur.`,
-      brand: "fresh",
-      type: "face wash",
-      use: `Eksfoliye Edici Temizleyiciyi nemli cildinize uygulayın. Şeker eriyene kadar ılık suyla nazikçe masaj yapın ve ardından durulayın.
-        Size özel bir temizlik ve daha yumuşak bir doku için daha fazla su kullanın.
-        Şeker peelingi günlük olarak kullanılabilir.    
-        `,
-      volume: "125ml",
-      price: 140,
-      piece:1
-  
-    },
-  
-    ,
-  
-    {
-      id: 18,
-      image: biossance2,
-      title: "çilekli yüz temizleyici ",
-      exp: ` Bu lüks, hafif C vitamini yağı ile gözle görülür sonuçların (aydınlatma, sıkılaştırma ve nemlendirme) üçlüsünü deneyimleyin . Yağda çözünen, rafta dayanıklı C vitaminimiz, güçlü bir parlatıcı ve elastikiyet arttırıcıdır. Skualen nemi hapsederken Sakız Adası kristal yağı, cildinize genç bir canlılık kazandırmak için sıkılaştırır ve canlandırır. Şam gülü yaprağı özümüz sakinleştirir ve yatıştırır, geride yumuşak, doğal bir koku bırakır.`,
-      brand: "biossance",
-      type: "c vitamini yağı",
-      use: `Sabah ve akşam birkaç damla C Vitamini Gül Yağını temiz cilde hafifçe bastırın. Uzun süreli nemlendirmeyi kilitlemek için serum ve nemlendiricinizden sonra C Vitamini yağını kullanın. Ekstra nemli kapatıcılık için fondöteninize bir veya iki damla da ekleyebilirsiniz. 
-        `,
-      volume: "30ml",
-      price: 625,
-      piece:1
-  
-    },
+
    
   
   

@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import {React,useState,useEffect} from 'react'
 import Slide from '../../components/Slide';
 import Section from '../../components/Section';
 import ProductCards from '../../components/ProductCards';
@@ -41,7 +41,7 @@ import productdata from "../../data/MostLoved"
 import { motion,useScroll,useSpring } from 'framer-motion'; 
 
 
-const Home = () => {
+const Home = ({basket,setBasket,liked,setLiked}) => {
 
 
 
@@ -97,8 +97,6 @@ const Home = () => {
   ];
 
 
-
-  const [basket, setBasket] = useState([])
   
   const container = {
     visible:{
@@ -157,7 +155,7 @@ const item = {
       </div>
 
     
-      <LoadMore/>
+      <LoadMore basket={basket} setBasket={setBasket} liked={liked} setLiked={setLiked}/>
       <Slide />
       <İletisim/>
       <Section />

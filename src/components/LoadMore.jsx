@@ -8,33 +8,10 @@ import { motion } from 'framer-motion';
 const imagePerRow = 3;
 
 
-const LoadMore = () => {
+const LoadMore = ({basket,setBasket,liked,setLiked}) => {
 
-    const [basket, setBasket] = useState([])
+    // const [basket, setBasket] = useState([])
 
-    const saveToLocalStorage = (key, data) => {
-        localStorage.setItem(key, JSON.stringify(data));
-      };
-      
-      // Local Storage'dan veri çekmek için fonksiyon
-      const getFromLocalStorage = (key) => {
-        const data = localStorage.getItem(key);
-        return data ? JSON.parse(data) : null;
-      };
-      
-
-      // Sayfa yüklendiğinde Local Storage'dan sepet verisini çekmek için useEffect 
-  useEffect(() => {
-    const storedBasket = getFromLocalStorage('basket');
-    if (storedBasket) {
-        setBasket(storedBasket);
-    }
-  }, []);
-
-  // Sepet durumunu Local Storage'a kaydetmek için useEffect 
-  useEffect(() => {
-    saveToLocalStorage('basket', basket);
-  }, [basket]);
 
 
     const [next, setNext] = useState(imagePerRow);
@@ -91,6 +68,8 @@ const LoadMore = () => {
                         key={i}
                         product={product}
                         basket={basket}
+                        liked={liked} 
+                        setLiked={setLiked}
                         lastprice={product.piece*product.price}
                         setBasket={setBasket}
                         onClick={() => {

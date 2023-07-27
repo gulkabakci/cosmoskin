@@ -15,12 +15,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-
-  const [users, setUsers] = useState([]);
+  const [basket, setBasket] = useState([])
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [cartItems, setCartItems] = useState([]);
-  const [favoriteItems, setFavoriteItems] = useState([]);
-
+  const [users, setUsers] = useState([]);
+  const [liked, setLiked] = useState([])
 
    // localStorage'dan kayıtları çek
    useEffect(() => {
@@ -28,35 +26,23 @@ function App() {
     if (storedUsers) {
       setUsers(storedUsers);
     }
+  },[])
 
-    const storedCartItems = JSON.parse(localStorage.getItem("cartItems"));
-    if (storedCartItems) {
-      setCartItems(storedCartItems);
-    }
-
-    const storedFavoriteItems = JSON.parse(localStorage.getItem("favoriteItems"));
-    if (storedFavoriteItems) {
-      setFavoriteItems(storedFavoriteItems);
-    }
-  }, []);
-
-  // localStorage'a kayıtları yaz
-  useEffect(() => {
-    localStorage.setItem("users", JSON.stringify(users));
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
-    localStorage.setItem("favoriteItems", JSON.stringify(favoriteItems));
-  }, [users, cartItems, favoriteItems]);
-
-
-
+    // localStorage'a kayıtları yaz
+    useEffect(() => {
+      localStorage.setItem("users", JSON.stringify(users));
+    }, [users]);
+  
+  
+  
   return (
     <div >
 
-        < ToastContainer /> 
+      < ToastContainer /> 
       <Router>
-      <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} basket={basket} setBasket={setBasket}  liked={liked} setLiked={setLiked} />
       <Routes>
-        <Route path="/"  element={<Home />} />
+        <Route path="/"  element={<Home basket={basket} setBasket={setBasket}  liked={liked} setLiked={setLiked} />} />
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} users={users} />} />
         <Route path="/register" element={<Register setUsers={setUsers} />} />
         <Route path="/" element={<Authentication isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />

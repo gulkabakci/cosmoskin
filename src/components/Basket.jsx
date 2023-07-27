@@ -1,7 +1,9 @@
 import {React,useState,useEffect} from 'react'
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import LoadMore from './LoadMore';
 
-const Basket = ({show,setShow,handleClose,basket,setBasket,removeBasket,}) => {
+
+const Basket = ({basket,setBasket,show,setShow,handleClose,removeBasket,}) => {
 
     const [cost, setCost] = useState()
     useEffect(() => {
@@ -10,6 +12,17 @@ const Basket = ({show,setShow,handleClose,basket,setBasket,removeBasket,}) => {
       console.log(totalPrice)
     }, [basket])
 
+    function removeBasket(productid) {
+      const removeFind = basket.find(item => item.id === productid);
+      removeFind.piece -= 1;
+      if (removeFind.piece === 0) {
+        setBasket([...basket.filter(item => item.id !== productid)]);
+      }
+      else {
+        setBasket([...basket.filter(item => item.id !== productid)])
+      }
+    }
+  
   
     const handleDecrement = (index) => {
         // Ürün sayısını azaltan fonksiyon
@@ -28,6 +41,7 @@ const Basket = ({show,setShow,handleClose,basket,setBasket,removeBasket,}) => {
         setBasket(updatedBasket);
       };
     
+      <LoadMore basket={basket} setBasket={setBasket} />
 
     return (
         <div>
@@ -39,7 +53,8 @@ const Basket = ({show,setShow,handleClose,basket,setBasket,removeBasket,}) => {
             <div style={{ marginTop: "-30px" }}>
               <ul style={{ marginLeft: "0", paddingLeft: "0px", }} id="offcanvaslist">
                 
-                {basket.map((product, index) => {
+              {basket && basket.length > 0 ? (
+                basket.map((product, index) => {
                   return <div> <li id="offcanvasli" key={index}>
                     <img id='offcanvasimage' src={product.image} />
                     <p style={{ textTransform: "lowercase", color: "#393939", fontFamily: " 'Roboto Slab', serif", marginLeft: "15px" }} >{product.title}  <span style={{ position: "absolute", top: "13px", right: "15px" }}>
@@ -57,7 +72,11 @@ const Basket = ({show,setShow,handleClose,basket,setBasket,removeBasket,}) => {
                   </li>
                   </div>
 
-                })}
+
+                })    ) : (
+                  <p>Sepetiniz boş.</p>
+                )}
+                
               </ul>
             </div>
             <hr />

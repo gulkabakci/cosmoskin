@@ -33,6 +33,58 @@ import biossance2 from "./productimage/biossance2.jpg"
 
     },
     {
+      id: 9,
+      image: byecom,
+      title: " saf sakinleştirici ampul",
+      exp: "Bu ampul, cildi hızlı bir şekilde sakinleştiren, cildinizin nemlenmiş ve tazelenmiş hissetmesini sağlayan yüksek nem içeriği ve çeşitli bitki özleri içerir. Centella Asiatica, Çay Ağacı ve Portulaca özleri gibi bileşenlerle tahrişi hafifletmeye ve cildi sakinleştirmeye yardımcı olur.",
+      brand: "by ecom",
+      use: `Temiz cilde 2-3 damla uygulayın (tonikten sonra)
+    Tamamen emilene kadar cilde hafifçe vurun
+    Tercih edilen nemlendirici ile takip edin`,
+      type: "ampul serum",
+      volume: "30ml",
+      price: 500
+    },
+    {
+      id: 17,
+      image: sugar,
+      title: "çilekli yüz temizleyici ",
+      exp: ` Sugar Strawberry Exfoliating Face Wash cilt temizleyici yumuşak peeling, 
+        cildi kirden arındırarak gözenekleri sıkılaştırır ve cilde olağanüstü pürüzsüz ve
+         yumuşak bir doku sağlar.Bu yüz temizleyici peeling gözenekleri sıkılaştırmak ve 
+         cilde daha aydınlık bir görünüm sağlamak için cilt üzerinde kademeli olarak eriyen
+          iki farklı büyüklükte şeker kristalleri ve cilde parlak, sağlıklı ve dinç bir görünüm
+           sunmak için ise çilek çekirdeği özü içerir. Yumuşak dokusuyla cildi nazikçe arındırıp
+            sebum fazlalığını, kiri ve makyajı temizlerken cildin nemini ve dengesini korur.`,
+      brand: "fresh",
+      type: "face wash",
+      use: `Eksfoliye Edici Temizleyiciyi nemli cildinize uygulayın. Şeker eriyene kadar ılık suyla nazikçe masaj yapın ve ardından durulayın.
+        Size özel bir temizlik ve daha yumuşak bir doku için daha fazla su kullanın.
+        Şeker peelingi günlük olarak kullanılabilir.    
+        `,
+      volume: "125ml",
+      price: 140,
+      piece:1
+  
+    }
+    ,
+    {
+      id: 11,
+      image: roocares,
+      title: "Rahatlatıcı esans yağı",
+      exp: `Tek bir serumla 5 etki hedefler.
+      Cilt lekelerinin oluşumunu engeller ve var olan lekelerin giderilmesine yardımcı olur.
+      Cildin nem tutma kapasitesini maksimum seviyede yükseltir ve kolajen üretimini arttırır.
+      Donuk, mat, cansız ciltler için ideal bir parlaklık ve canlanma sağlar.
+      Var olan çizgi ve kırışıklık görünümünü azaltır, yenilerinin oluşumunu engeller, Cilt elastikiyetini arttırarak cildin daha sıkı ve pürüzsüz görünmesini sağlar.
+      `  ,
+      brand: "roocares",
+      type: "serum",
+      use: ``,
+      price: 860
+    }
+    ,
+    {
       id: 6,
       image: laneige,
       title: "Dudak Uyku Maskesi",
@@ -45,22 +97,9 @@ import biossance2 from "./productimage/biossance2.jpg"
       price: 760
 
     },
-    {
-      id: 15,
-      image: biossance,
-      title: "DENİZ YOSUNU GÖZ KREMİ ",
-      exp: `Ödüllü cruelty-free göz kremi, maksimum performans ve daha az görünür ince çizgi ve kırışıklık için güçlü deniz yosunu ve paracres özleri ile tüm alanı anında kaldırır. Deniz Yosunu Göz Kremi'nin hava-hafif dokusu temas halinde eriyerek derin nemlendirme sağlar ve arkasında makyaj için mükemmel bir tuval bırakı
-         `  ,
-      brand: "biossance",
-      type: "göz kremi",
-      price: 460,
-      use: ` Yüzük parmağınızı kullanarak tüm göz çevresine göz kremini nazikçe uygulayın. Göz çevresine, şakağa ve kaş kemiğinin altına masaj yapın (göz kapaklarında kullanılabilir).
-      Günde iki kez, sabah ve akşam kullanın.
-      En iyi sonuçlar için, temizlemeden sonra ve serum ve nemlendiricilerden önce kullanın.
-      
-      `,
-    }
-    ,
+    
+
+  
     {
       id: 7,
       image: klairs,
@@ -73,20 +112,6 @@ import biossance2 from "./productimage/biossance2.jpg"
       use: `Serum: Cildinizi temizledikten sonra bu serumdan 3-4 damlayı cildinize uygulayıp emilmesini sağlayın. Oda sıcaklığında muhafaza edin. Buzdolabında saklarsanız kristalize olacaktır.
       Krem:Cilt bakımı rutininizin son aşamasında cildinizdeki hassas bölgeye az miktarda uygulayıp tam emilmesi için hafif masaj yapın.
     `,
-    },
-
-    {
-      id: 9,
-      image: byecom,
-      title: " saf sakinleştirici ampul",
-      exp: "Bu ampul, cildi hızlı bir şekilde sakinleştiren, cildinizin nemlenmiş ve tazelenmiş hissetmesini sağlayan yüksek nem içeriği ve çeşitli bitki özleri içerir. Centella Asiatica, Çay Ağacı ve Portulaca özleri gibi bileşenlerle tahrişi hafifletmeye ve cildi sakinleştirmeye yardımcı olur.",
-      brand: "by ecom",
-      use: `Temiz cilde 2-3 damla uygulayın (tonikten sonra)
-    Tamamen emilene kadar cilde hafifçe vurun
-    Tercih edilen nemlendirici ile takip edin`,
-      type: "ampul serum",
-      volume: "30ml",
-      price: 500
     },
 
     {
@@ -132,22 +157,6 @@ import biossance2 from "./productimage/biossance2.jpg"
       price: 250
     },
 
-    {
-      id: 11,
-      image: roocares,
-      title: "Rahatlatıcı esans yağı",
-      exp: `Tek bir serumla 5 etki hedefler.
-      Cilt lekelerinin oluşumunu engeller ve var olan lekelerin giderilmesine yardımcı olur.
-      Cildin nem tutma kapasitesini maksimum seviyede yükseltir ve kolajen üretimini arttırır.
-      Donuk, mat, cansız ciltler için ideal bir parlaklık ve canlanma sağlar.
-      Var olan çizgi ve kırışıklık görünümünü azaltır, yenilerinin oluşumunu engeller, Cilt elastikiyetini arttırarak cildin daha sıkı ve pürüzsüz görünmesini sağlar.
-      `  ,
-      brand: "roocares",
-      type: "serum",
-      use: ``,
-      price: 860
-    }
-    ,
     {
       id: 14,
       image: brioge,

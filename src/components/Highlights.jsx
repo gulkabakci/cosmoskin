@@ -11,24 +11,30 @@ import { motion } from 'framer-motion';
 
 const Highlights = ({ productdata }) => {
 
-  // const [favorite, setFavorite] = useState([]); 
+  const [isLiked, setisLiked] = useState(true);
   const fav = useRef()
 
-  const favColor = () => {
-    fav.current.style.color = "#e14062";
-}
-// console.log(favorite)
+
+  const isFavItem = () => {
+      setisLiked(!isLiked);
+      if(isLiked=== true){
+        fav.current.style.color = "#e14062";
+      }
+      else{
+        fav.current.style.color = "#fcf0f0";
+
+      }
+  }
 
   const navigate = useNavigate()
 
-  
  
   return (
 
     <div className='outdiv mx-5' style={{ cursor: "default" }} >
       <div>  <img className='prd-img' src={productdata.image} /> </div>
       <div>  <FontAwesomeIcon icon={faHeart} size="xl" onClick={() => {
-        favColor();
+        isFavItem();
         // setFavorite(...favorite,productdata);
         // <Navbar favorite={favorite}/>
       }} ref={fav} style={{ color: "#fcf0f0", cursor: "pointer" }} id="favv" /></div>

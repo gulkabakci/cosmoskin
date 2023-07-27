@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const İletisim = () => {
   return (
    
-    <div class="contain"  >
+    <div class="contain"  id="aboutSection">
 
   <div class="wrapper" >
 
