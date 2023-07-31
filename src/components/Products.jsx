@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
 import ViewBasket from '../pages/ViewBasket';
+import Highlights from './Highlights';
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 //her bir ürün kartı
 
@@ -54,11 +55,12 @@ const Products = ({ product, onClick, basket, setBasket, lastprice,liked,setLike
       else{
         fav.current.style.color = "#fcf0f0";
         setLiked(liked.filter(item => item.id !== product.id));
-        console.log("çıkarıncas:" ,liked)
+        console.log("çıkarınca:" ,liked)
 
       }
-
   }
+  <Highlights isFavItem={isFavItem} />
+
 
 
   const navigate = useNavigate()
@@ -91,6 +93,7 @@ const Products = ({ product, onClick, basket, setBasket, lastprice,liked,setLike
     updatedBasket[index].piece += 1;
     setBasket(updatedBasket);
   };
+
 
   // <ViewBasket product={product} handlebasket={handlebasket} basket={basket} setBasket={setBasket} lastprice={lastprice} removeBasket={removeBasket} />
   return (

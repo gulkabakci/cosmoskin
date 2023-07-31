@@ -156,3 +156,6 @@ a:visited{
   background-color: rgb(255, 255, 255);
   color: rgb(141, 175, 204);
 }
+.element-class::-webkit-scrollbar {
+  display: none;
+}

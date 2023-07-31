@@ -5,8 +5,7 @@ import "../components/highlights.css"
 const ViewBasket = (product,handlebasket,basket,setBasket,lastPrice,removeBasket) => {
 
     const handleDecrement = (index) => {
-        // Ürün sayısını azaltan fonksiyon
-        // Eğer 1'den küçükse, 1 olarak tutarız.
+       
         if (basket[index].piece > 1) {
           const updatedBasket = [...basket];
           updatedBasket[index].piece -= 1;

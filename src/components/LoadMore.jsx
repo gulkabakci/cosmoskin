@@ -93,8 +93,6 @@ const LoadMore = ({basket,setBasket,liked,setLiked}) => {
                         }} 
                         >
                     </Products></motion.div>)}
-            
-
             </motion.div>
             {next < productt?.length && (
                     <div style={{ display:"flex",justifyContent:"center" }}> <button ref={btn} className="mt-5 btnload" onMouseOver={styleButton} onMouseOut={styledButton} onClick={handleMoreProduct} style={{ padding: "12px", fontFamily: "'Varela Round', sans-serif", border: "1px solid #e14062", borderRadius: "3px", backgroundColor: "#e14062", color: "white",

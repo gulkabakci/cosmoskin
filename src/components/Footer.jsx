@@ -7,8 +7,6 @@ import telegram from "../assets/telegram.png";
 import twitter from "../assets/twitter.png";
 import logo from "../assets/lotus.png"
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
 
 const Footer = () => {
   return (
@@ -20,31 +18,28 @@ const Footer = () => {
           <div className="col ftr">
             <h1>Kurumsal</h1>
             <ul>
-              <li>Hakkımızda</li>
-              <li>İletişim</li>
-              <li>Gizlilik Bildirimi</li>
-              <li>Yasal Haklar</li>
-
-
+              <li>Hakkımızda</li> <br/>
+              <li>İletişim</li><br/>
+              <li>Gizlilik Bildirimi</li><br/>
+              <li>Yasal Haklar</li><br/>
             </ul>
           </div>
           <div className="col ftr">
             <h1>Müşteri Hizmetleri</h1>
             <ul>
-              <li>Orijinallik ve Memnuniyet Garantisi</li>
-              <li>Şartlar, Politikalar ve Yasal Sözleşmeler </li>
-              <li>Kargo / Ödeme / İade</li>
-              <li>Destek Portalı</li>
+              <li>Orijinallik ve Memnuniyet Garantisi</li> <br/>
+              <li>Şartlar, Politikalar ve Yasal Sözleşmeler </li><br/>
+              <li>Kargo / Ödeme / İade</li><br/>
+              <li>Destek Portalı</li><br/>
             </ul>
           </div>
           <div className="col ftr">
-            <h1>technical skills</h1>
+            <h1>Yardım</h1>
             <ul>
-              <li>Figma & XD</li>
-              <li>Illustrator</li>
-              <li>InDesign</li>
-              <li>Photoshop</li>
-              <li>Animate</li>
+              <li>Sıkça Sorulan Sorular</li><br/>
+              <li>Nasıl İade Edebilirim</li><br/>
+              <li>Canlı Yardım</li><br/>
+              <li>İşlem Rehberi</li>
             </ul>
           </div>
       </Row>

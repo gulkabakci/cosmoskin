@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
 import "./auth.css"
-import { initializeApp } from "firebase/app";
-import { auth } from '../firebase';
-import { getAuth,createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom'
 import { motion,useScroll,useSpring } from 'framer-motion'; 
+import { useDispatch,useSelector } from 'react-redux'; // useDispatch ekledik
+import { ADD_USER } from '../usersSlice'
 
 
 
-const Register = ({ setUsers }) => {
+
+const Register = ({ users }) => {
+
+  const dispatch = useDispatch(); // useDispatch'u burada tanımladık
 
 
     const navigate = useNavigate()
@@ -17,14 +19,20 @@ const Register = ({ setUsers }) => {
     const [password, setPassword] = useState("");
   
     const handleRegister = () => {
-      // Kullanıcı bilgilerini bir dizi içinde depolayalım
-      setUsers((prevUsers) => [...prevUsers, { username, password }]);
+      // Burada "users" state'ini güncellemek için dispatch kullanıyoruz.
+      const newUser = { username, password };
+      console.log('Yeni kullanıcı:', newUser);
+      dispatch(ADD_USER(newUser)); // ADD_USER action'ını tetikledik
+      console.log('Redux store durumu:', users);
       console.log("Kayıt Başarılı!");
-      console.log(username,password);
+      console.log(username, password);
       toast.success("Kaydınız oluşturuldu.");
       navigate("/login");
     };
   
+    const usersCopy = useSelector((state) => state.users?.value || []);
+    console.log("kullanıcılar son", usersCopy);
+
 
   return (
 

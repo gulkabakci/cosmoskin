@@ -1,43 +1,33 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { fontFamily, fontWeight } from '@mui/system'
 import "./navbar.css"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
-import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import x from "../assets/x.png"
-import İletisim from "./İletisim"
-import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import { Link } from 'react-scroll';
-
-
-import { BrowserRouter as Router, Route, } from 'react-router-dom';
-
-import Products from "./Products"
-import productdata from '../data/Productdata';
 import Basket from './Basket';
 
 const Navbar = ({ isLoggedIn, setIsLoggedIn, basket, setBasket, liked, setLiked }) => {
-
-
     defineElement(lottie.loadAnimation);
-
     const navigate = useNavigate()
-
     const ref = React.createRef();
-
     const [showBasket, setShowBasket] = useState(false);
     const handleBasketClick = () => {
         setShowBasket(!showBasket);
     };
-
-
-
+    function removeLiked(productid) {
+        const removeFind = liked.find(item => item.id === productid);
+        removeFind.piece -= 1;
+        if (removeFind.piece === 0) {
+            setLiked([...liked.filter(item => item.id !== productid)]);
+        }
+        else {
+            setLiked([...liked.filter(item => item.id !== productid)])
+        }
+    }
     return (
 
         <Row className='nvbr' >
@@ -58,7 +48,6 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, basket, setBasket, liked, setLiked 
                         </lord-icon></a>
                 </form>
             </Col>
-
             <Col>
                 <ul>
                     {['bottom'].map((placement) => (
@@ -92,7 +81,6 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, basket, setBasket, liked, setLiked 
                                 </Popover>
                             }
                         >
-
                             <li><a href="#" className='tooltipp'><script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                                 <lord-icon
                                     src="https://cdn.lordicon.com/bhfjfgqz.json"
@@ -109,13 +97,21 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, basket, setBasket, liked, setLiked 
                             placement={placement}
                             overlay={
                                 <Popover style={{ backgroundColor: "rgba(244, 244, 244, 0.16)", border: "1px solid white", color: "white" }} id={`popover-positioned-${placement}`}>
-                                    <Popover.Body style={{ maxHeight: "300px", overflow: "auto", }}>
-                                        <div style={{textAlign:"center"}}> <span style={{ fontFamily: " 'Raleway', Arial, sans-serif",fontSize:"16px", color: "#ffffff" ,borderBottom:"1px solid #ffffff7c" }} >Favorilerim   </span>{liked && liked.length > 0 ? (
+                                    <Popover.Body className='element-class' style={{ maxHeight: "300px", overflow: "auto", }}>
+                                        <div style={{ textAlign: "center" }}> <span style={{ fontFamily: " 'Raleway', Arial, sans-serif", fontSize: "16px", color: "#ffffff", borderBottom: "1px solid #ffffff7c" }} >Favorilerim   </span>{liked && liked.length > 0 ? (
                                             liked.map((product, index) => {
                                                 return <div> <li style={{ border: "none", borderBottom: "1px solid #ffffff63" }} id="offcanvasli" key={index}>
                                                     <img id='offcanvasimage' src={product.image} />
-                                                    <p style={{ textTransform: "lowercase", color: "#393939", fontFamily: " 'Roboto Slab', serif", marginLeft: "15px", color: "white" }} >{product.title}  <span style={{ position: "absolute", top: "13px", right: "15px" }}>
+                                                    <p style={{ textTransform: "lowercase", color: "#393939", fontFamily: " 'Roboto Slab', serif", marginLeft: "15px", color: "white", bottom: "0" }} >{product.title}  <span style={{ position: "absolute", top: "0px", right: "0px" }}>
                                                         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                                                        <lord-icon
+                                                            src="https://cdn.lordicon.com/kfzfxczd.json"
+                                                            trigger="hover"
+                                                            colors="primary:white"
+                                                            state="morph-fill"
+                                                            onClick={() => removeLiked(product.id)}
+                                                            style={{ width: "20px", height: "20px", cursor: "pointer" }}>
+                                                        </lord-icon>
                                                     </span> <br /> <span style={{ fontFamily: "'Shadows Into Light', cursive", color: "white" }} >{product.brand}</span>
                                                     </p>
                                                 </li>
@@ -154,12 +150,8 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, basket, setBasket, liked, setLiked 
                                 colors="primary:#ffffff"
                                 style={{ width: "30px", height: "30px" }}>
                             </lord-icon></a> </li>      </Link>
-
-
                 </ul>
             </Col>
-
-
             {showBasket && (
                 <Basket
                     show={showBasket}
@@ -169,13 +161,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, basket, setBasket, liked, setLiked 
                 // Diğer prop değerlerini buraya ekleyin
                 />
             )}
-
-
-
-
         </Row>
-
-
     )
 }
 

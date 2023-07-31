@@ -1,10 +1,10 @@
-import herbivore from "./productimage/herbivore.png"
+import herbivore from "./productimage/herbivore.jpg"
 import herbivoreaha from "./productimage/herbivoreahabha.jpg"
 import thenimetyou from "./productimage/thenimetyou.jpg"
-import idewcare from "./productimage/idewcare.png"
+import idewcare from "./productimage/idewcare.jpg"
 import caudalie from "./productimage/caudalie.jpg"
 import transform from "./productimage/transform.png"
-import laneige from "./productimage/laneige.avif"
+import laneige from "./productimage/laneige.jpg"
 import klairs from "./productimage/klairs.jpg"
 import drjart from "./productimage/drjart.jpg"
 import byecom from "./productimage/byecom.jpg"
@@ -38,6 +38,31 @@ import React from 'react'
       ,piece:1
     },
     {
+      id: 4,
+      image: caudalie,
+      title: "Nemlendirici Jel Krem",
+      exp: "Cilt için doğal bir nem kaynağı olan Vinosource-Hydra Organik Üzüm Suyu İçeren Nemlendirici Jel Krem, cilt bariyerini güçlendirerek cilde yoğun nem sağlar. Silikon içermeyen, ferahlatıcı jel-krem dokusuyla cildi yağlı his bırakmadan nemlendirir. Uygulamanın hemen ardından cilt daha dolgun, yoğun olarak nemlenmiş, ferah bir hisse kavuşur.      ",
+      brand: "caudalie",
+      type: "nemlendirici",
+      use: `Sabah ve akşam serumunuzdan sonra veya tek başına yüz ve boyun bölgesine uygulayın. `,
+      volume: "50ml",
+      price: 200
+      ,piece:1
+    },
+      
+    {
+      id: 3,
+      image: idewcare,
+      title: "aydınlatıcı glikolik maskesi",
+      exp: "YIKANABİLİR YÜZ MASKESİ, GLİKOLİK ASİT, AYDINLATICI: Harika hissettiren bu dut kokulu yıkanabilir maske, donuk cildi canlandırmaya ve aydınlatmaya yardımcı olmak için antioksidanlar ve peeling yapan çilek tohumları ile doludur. Bu glikolik maske, daha parlak bir cilt için donukluğu azalttığı bilinen bileşenler içerir.",
+      brand: "i dew care",
+      type: "yüz maskesi",
+      use: `Temiz cilde göz ve dudaklardan kaçınarak cömert, eşit bir tabaka uygulayın. 5-10 dakika bekletin - maske kurumaz! Cilde dairesel hareketlerle masaj yaparken ılık su ile durulayın. En iyi sonuçlar için haftada 2-3 kez kullanın.`,
+      volume: "100g",
+      price: 560
+      ,piece:1
+    },
+    {
       id: 1,
       image: herbivoreaha,
       title: "AHA+BHA Glow Facial",
@@ -66,31 +91,7 @@ import React from 'react'
       ,piece:1
   
     },
-  
-    {
-      id: 3,
-      image: idewcare,
-      title: "aydınlatıcı glikolik maskesi",
-      exp: "YIKANABİLİR YÜZ MASKESİ, GLİKOLİK ASİT, AYDINLATICI: Harika hissettiren bu dut kokulu yıkanabilir maske, donuk cildi canlandırmaya ve aydınlatmaya yardımcı olmak için antioksidanlar ve peeling yapan çilek tohumları ile doludur. Bu glikolik maske, daha parlak bir cilt için donukluğu azalttığı bilinen bileşenler içerir.",
-      brand: "i dew care",
-      type: "yüz maskesi",
-      use: `Temiz cilde göz ve dudaklardan kaçınarak cömert, eşit bir tabaka uygulayın. 5-10 dakika bekletin - maske kurumaz! Cilde dairesel hareketlerle masaj yaparken ılık su ile durulayın. En iyi sonuçlar için haftada 2-3 kez kullanın.`,
-      volume: "100g",
-      price: 560
-      ,piece:1
-    },
-    {
-      id: 4,
-      image: caudalie,
-      title: "Nemlendirici Jel Krem",
-      exp: "Cilt için doğal bir nem kaynağı olan Vinosource-Hydra Organik Üzüm Suyu İçeren Nemlendirici Jel Krem, cilt bariyerini güçlendirerek cilde yoğun nem sağlar. Silikon içermeyen, ferahlatıcı jel-krem dokusuyla cildi yağlı his bırakmadan nemlendirir. Uygulamanın hemen ardından cilt daha dolgun, yoğun olarak nemlenmiş, ferah bir hisse kavuşur.      ",
-      brand: "caudalie",
-      type: "nemlendirici",
-      use: `Sabah ve akşam serumunuzdan sonra veya tek başına yüz ve boyun bölgesine uygulayın. `,
-      volume: "50ml",
-      price: 200
-      ,piece:1
-    },
+
     {
       id: 5,
       image: transform,
@@ -271,21 +272,7 @@ import React from 'react'
       piece:1
   
     },
-    {
-      id: 13,
-      image: featforskin,
-      title: "aydınlatıcı serum ",
-      exp: `Aktif ve doğal bileşenler arasındaki en iyi karışım, eşit olmayan cilt tonu görünümünü azaltır. Bakterileri ve ölü deri hücrelerini yok etmeye ve serbest radikallerin neden olduğu hasarı onarmaya yardımcı olmak için doğal bir Alfa Hidroksi Asit (AHA) formu olarak şeker akçaağaç özü içerir.
-          Düzensiz cilt tonuna neden olan hiperpigmentasyon görünümünü azaltan Traneksamik Asit. Bu bileşenler, cildinizin güneş ışığına duyarlılığını etkilemez.
-           `  ,
-      brand: "feat for skin",
-      type: "serum",
-      volume: "30ml",
-      price: 240,
-      piece:1,
-      use: `2-3 damlayı yeni temizlenmiş yüzün her yerine hafifçe vurun. Ekstra etkinlik ve koruma için nemlendirici ve güneş kremi (sabahları) ile katmanlayın. En iyi sonuçlar için en az 2 hafta boyunca her sabah ve akşam düzenli olarak kullanın. Herhangi bir tahriş meydana gelirse durdurun.        `,
-    }
-    ,
+
     {
       id: 14,
       image: brioge,
@@ -339,12 +326,36 @@ import React from 'react'
       piece:1,
   
     },
-    
-    
-  
-
-   
-  
+    {
+      id: 13,
+      image: featforskin,
+      title: "aydınlatıcı serum ",
+      exp: `Aktif ve doğal bileşenler arasındaki en iyi karışım, eşit olmayan cilt tonu görünümünü azaltır. Bakterileri ve ölü deri hücrelerini yok etmeye ve serbest radikallerin neden olduğu hasarı onarmaya yardımcı olmak için doğal bir Alfa Hidroksi Asit (AHA) formu olarak şeker akçaağaç özü içerir.
+          Düzensiz cilt tonuna neden olan hiperpigmentasyon görünümünü azaltan Traneksamik Asit. Bu bileşenler, cildinizin güneş ışığına duyarlılığını etkilemez.
+           `  ,
+      brand: "feat for skin",
+      type: "serum",
+      volume: "30ml",
+      price: 240,
+      piece:1,
+      use: `2-3 damlayı yeni temizlenmiş yüzün her yerine hafifçe vurun. Ekstra etkinlik ve koruma için nemlendirici ve güneş kremi (sabahları) ile katmanlayın. En iyi sonuçlar için en az 2 hafta boyunca her sabah ve akşam düzenli olarak kullanın. Herhangi bir tahriş meydana gelirse durdurun.        `,
+    }
+    ,
+    {
+      id: 30,
+      image: featforskin,
+      title: "aydınlatıcı serum ",
+      exp: `Aktif ve doğal bileşenler arasındaki en iyi karışım, eşit olmayan cilt tonu görünümünü azaltır. Bakterileri ve ölü deri hücrelerini yok etmeye ve serbest radikallerin neden olduğu hasarı onarmaya yardımcı olmak için doğal bir Alfa Hidroksi Asit (AHA) formu olarak şeker akçaağaç özü içerir.
+          Düzensiz cilt tonuna neden olan hiperpigmentasyon görünümünü azaltan Traneksamik Asit. Bu bileşenler, cildinizin güneş ışığına duyarlılığını etkilemez.
+           `  ,
+      brand: "feat for skin",
+      type: "serum",
+      volume: "30ml",
+      price: 240,
+      piece:1,
+      use: `2-3 damlayı yeni temizlenmiş yüzün her yerine hafifçe vurun. Ekstra etkinlik ve koruma için nemlendirici ve güneş kremi (sabahları) ile katmanlayın. En iyi sonuçlar için en az 2 hafta boyunca her sabah ve akşam düzenli olarak kullanın. Herhangi bir tahriş meydana gelirse durdurun.        `,
+    }
+    ,
   
     
 ];

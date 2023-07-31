@@ -1,22 +1,14 @@
-import ProductDetails from '../components/ProductDetails';
-import Highlights from '../components/Highlights';
 import { Route, NavLink as Link, Switch, useLocation, useParams } from "react-router-dom";
 import "./productdetail.css"
-  
 import products from "../data/Productdata"
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus,faHeart,faMinus } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
 <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
   integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
   crossorigin="anonymous"></script>
-
-
-
 const ProductDetail = () => {
 
   const [basket, setBasket] = useState("Sepete Ekle");
@@ -28,19 +20,14 @@ const ProductDetail = () => {
   const product = products.find((item) => item.id === productId);
   const navigate = useNavigate()
 
-
   const fav = useRef()
   const favColor = () => {
     fav.current.style.color = "#e14062";
   }
 
-
-
-
   const notLike = () => {
     fav.current.style.color = "#e2879a";
   }
-
 
   if (!product) {
     return <div>Ürün bulunamadı.</div>;

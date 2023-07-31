@@ -7,33 +7,22 @@ import Register from "./pages/Register";
 import Navbar from "./components/Navbar";
 import ProductDetail from "./pages/ProductDetail";
 import Footer from "./components/Footer";
-import Authentication from "./Authentication";
-import Products from "./components/Products";
-import ViewBasket from "./pages/ViewBasket";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Manager from "./pages/Manager";
+import { useDispatch,useSelector } from 'react-redux'; // useDispatch ekledik
 
 function App() {
 
   const [basket, setBasket] = useState([])
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [users, setUsers] = useState([]);
+  const users = useSelector((state) => state.users); // Redux store'daki users state'ine erişiyoruz.
   const [liked, setLiked] = useState([])
 
-   // localStorage'dan kayıtları çek
-   useEffect(() => {
-    const storedUsers = JSON.parse(localStorage.getItem("users"));
-    if (storedUsers) {
-      setUsers(storedUsers);
-    }
-  },[])
+  const usersCopy = useSelector((state) => state.users);
+  console.log("kullanıcılar son", usersCopy);
 
-    // localStorage'a kayıtları yaz
-    useEffect(() => {
-      localStorage.setItem("users", JSON.stringify(users));
-    }, [users]);
-  
-  
+
   
   return (
     <div >
@@ -44,15 +33,13 @@ function App() {
       <Routes>
         <Route path="/"  element={<Home basket={basket} setBasket={setBasket}  liked={liked} setLiked={setLiked} />} />
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} users={users} />} />
-        <Route path="/register" element={<Register setUsers={setUsers} />} />
-        <Route path="/" element={<Authentication isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+        <Route path="/register" element={<Register users={users}  />} />
         <Route path="/products/:id" element={<ProductDetail />} />
-        <Route path="/basket" element={<ViewBasket />} />
+        <Route path="/manage" element={< Manager />} />
 
       </Routes>
       <Footer/>
     </Router>
-
     </div>
   );
 }
