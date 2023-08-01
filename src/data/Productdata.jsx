@@ -341,21 +341,7 @@ import React from 'react'
       use: `2-3 damlayı yeni temizlenmiş yüzün her yerine hafifçe vurun. Ekstra etkinlik ve koruma için nemlendirici ve güneş kremi (sabahları) ile katmanlayın. En iyi sonuçlar için en az 2 hafta boyunca her sabah ve akşam düzenli olarak kullanın. Herhangi bir tahriş meydana gelirse durdurun.        `,
     }
     ,
-    {
-      id: 30,
-      image: featforskin,
-      title: "aydınlatıcı serum ",
-      exp: `Aktif ve doğal bileşenler arasındaki en iyi karışım, eşit olmayan cilt tonu görünümünü azaltır. Bakterileri ve ölü deri hücrelerini yok etmeye ve serbest radikallerin neden olduğu hasarı onarmaya yardımcı olmak için doğal bir Alfa Hidroksi Asit (AHA) formu olarak şeker akçaağaç özü içerir.
-          Düzensiz cilt tonuna neden olan hiperpigmentasyon görünümünü azaltan Traneksamik Asit. Bu bileşenler, cildinizin güneş ışığına duyarlılığını etkilemez.
-           `  ,
-      brand: "feat for skin",
-      type: "serum",
-      volume: "30ml",
-      price: 240,
-      piece:1,
-      use: `2-3 damlayı yeni temizlenmiş yüzün her yerine hafifçe vurun. Ekstra etkinlik ve koruma için nemlendirici ve güneş kremi (sabahları) ile katmanlayın. En iyi sonuçlar için en az 2 hafta boyunca her sabah ve akşam düzenli olarak kullanın. Herhangi bir tahriş meydana gelirse durdurun.        `,
-    }
-    ,
+
   
     
 ];

@@ -37,15 +37,6 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, basket, setBasket, liked, setLiked 
             <Col >
                 <form action="#" method="post" style={{ display: "inline" }}>
                     <input type="text" name="search" placeholder="    Daha fazlası için ara..." className='search' />
-                    <a href='#' >
-                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon
-                            id="search-icon"
-                            src="https://cdn.lordicon.com/xfftupfv.json"
-                            trigger="hover"
-                            colors="primary:#060404"
-                            style={{ width: "30px", height: "30px" }}>
-                        </lord-icon></a>
                 </form>
             </Col>
             <Col>
@@ -161,6 +152,17 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, basket, setBasket, liked, setLiked 
                 // Diğer prop değerlerini buraya ekleyin
                 />
             )}
+
+            <a href='#'style={{position:"absolute",top:"70px",right:"490px"}} >
+                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                <lord-icon
+                    id="search-icon"
+                    src="https://cdn.lordicon.com/xfftupfv.json"
+                    trigger="hover"
+                    colors="primary:#ffffff"
+                    style={{ width: "30px", height: "30px" }}>
+                </lord-icon></a>
+
         </Row>
     )
 }

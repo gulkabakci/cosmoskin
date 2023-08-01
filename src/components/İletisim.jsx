@@ -2,12 +2,19 @@ import React from 'react'
 import "./iletisim.css"
 import { faEnvelope} from '@fortawesome/free-regular-svg-icons'
 import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons'
-
+import { toast } from 'react-toastify';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 const İletisim = () => {
+
+
+  const checkValidations = () => {
+    toast.success("En kısa zamanda size geriş dönüş yapacağız.");
+    // navigate("/login");
+  };
   return (
-   
+  
     <div class="contain"  id="aboutSection">
 
   <div class="wrapper" >
@@ -25,7 +32,7 @@ const İletisim = () => {
           <textarea  minlength="20" id="message" cols="30" rows="7" required></textarea>
         </p>
         <p class="full-width">
-          <input type="submit" class="submit-btn" value="Gönder" onclick="checkValidations()"/>
+          <input type="submit" class="submit-btn" value="Gönder" onClick={checkValidations}/>
         </p>
       </form>
     </div>

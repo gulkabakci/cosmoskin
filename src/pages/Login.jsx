@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion,useScroll,useSpring } from 'framer-motion'; 
+import { useDispatch,useSelector } from 'react-redux'; // useDispatch ekledik
 
 
 const Login = ({ setIsLoggedIn, users }) => {
@@ -14,11 +15,11 @@ const Login = ({ setIsLoggedIn, users }) => {
 
   const navigate = useNavigate()
 
-  
+  const usersCopy = useSelector((state) => state.users?.value || []);
 
   const handleLogin = (event) => {
     // Kullanıcı girişi kontrolü
-    const user = users.find((user) => user.username === username && user.password === password);
+    const user = usersCopy.find((user) => user.username === username && user.password === password);
 
     event.preventDefault(); // Sayfa yenilenmesini engelle
 
@@ -62,7 +63,7 @@ const Login = ({ setIsLoggedIn, users }) => {
             <button onClick={handleLogin} className='log-btn'  > { "Giriş Yap "}</button>
             <div className="register">
 
-              <p>{" Bir hesabın yok mu? "}<a href="#" onClick={() => navigate(`/register`)}>{ "Kaydol" }</a></p>
+              <p><a href="#" onClick={() => navigate(`/manage`)}>{" Yönetici olarak giriş yap" }</a></p>
 
             </div>
 
