@@ -1,3 +1,12 @@
+
+![cosmoskin1](https://github.com/gulkabakci/cosmoskin/assets/77975665/fca0b47f-85a9-4656-9545-6f7c874a5ee4)
+
+
+
+
+
+
+
 here is the presentation video of this project;
 https://www.youtube.com/watch?v=uH_4XYTlQkg
 
