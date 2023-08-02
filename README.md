@@ -1,4 +1,4 @@
-here is the presentation video of my project;
+here is the presentation video of this project;
 https://www.youtube.com/watch?v=uH_4XYTlQkg
 
 
