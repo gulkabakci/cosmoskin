@@ -3,7 +3,8 @@
 
 ![cosmoskin2](https://github.com/gulkabakci/cosmoskin/assets/77975665/547f4e95-cf41-4a24-9953-d80328da026a)
 
-![cosmoskin3](https://github.com/gulkabakci/cosmoskin/assets/77975665/f4c1dfb9-4e69-4041-ae5c-1c1515998774)
+![cosmoskin3](https://github.com/gulkabakci/cosmoskin/assets/77975665/90a454d8-0e00-4d55-bc62-05dc899b9a01)
+
 
 ![cosmoskin4](https://github.com/gulkabakci/cosmoskin/assets/77975665/f023058a-67be-4b7e-9484-db49e6f1acd5)
 
