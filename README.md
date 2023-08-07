@@ -13,8 +13,7 @@
 ![cosmoskin5](https://github.com/gulkabakci/cosmoskin/assets/77975665/14d26192-6b82-472d-9585-47d89f26b13b)
 
 
-
-here is the presentation video of this project;
+ presentation video of this project;
 https://www.youtube.com/watch?v=uH_4XYTlQkg
 
 
